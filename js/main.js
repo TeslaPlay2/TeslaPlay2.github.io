@@ -1,13 +1,7 @@
 "use strict";
 
-jQuery(document).ready(function() {
-	 
-	 //Slick
-	 jQuery('#slider').slick();
-	 $('.fade').slick({
-  dots: true,
+ $('#slider').slick({
   infinite: true,
-  speed: 500,
-  fade: true,
-  cssEase: 'linear'
+  slidesToShow: 3,
+  slidesToScroll: 3
 });
