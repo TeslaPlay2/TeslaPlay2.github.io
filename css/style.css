@@ -1,43 +1,21 @@
-.body {
-	color: #fff;
-	font-size: 14px;
+/* Header */
+
+.header {
+	background-color: #87509c;
 }
 
-  /* header */
-
-header {
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	z-index: 99;
-}
-.wrapper {
-	max-width: 1170px;
+.container {
+	max-width: 1140px;
 	margin: 0 auto;
 	width: 100%;
 }
-.header-wrap {
+.row-top {
 	margin-top: 55px;
 	display: flex;
 	align-items: center;
 	justify-content: center;
 }
-.logo {
-	padding-left: 15px;
-}
-.logo a {
-	text-decoration: none;
-	font-family: 'Lato',bold;
-	font-size: 24px;
-	font-weight: 400;
-	color: #fff;
-	text-transform: uppercase;
 
-}
-.color:hover {
-	color: #fcac45;
-}
 .menu {
 	list-style: none;
 	display: flex;
@@ -45,318 +23,507 @@ header {
 .menu a {
 	text-decoration: none;
 }
-.menu-item:first-child {
-	margin-left: 515px;
-}
 .menu-item {
-	margin-left: 22px;
-	position: relative;
+	margin-left: 45px;
 }
-
-.menu__link {
-	font-family: Lato, bold;
-	font-size: 14px;
+.menu-link {
+	font-family: "Titillium Web", Semi-bold;
+	font-size: 15px;
 	font-weight: 700;
 	position: relative;
 	text-transform: uppercase;
-	text-decoration: none;
     color: #fff;
 }
-.menu__link:hover {
-	color: #fcac45;
+.menu-link:hover {
+	background-color: #643a79;
+	width: 70%;
+	padding: 6px 15px;
+	border-radius: 15%;
+	color: #fff;
 }
 
- /* banner */
-
- #banner {
- 	height: 800px;
- 	background: #111 url(img/banner.png) no-repeat center top;
- 	background-attachment: fixed;
-    padding-top: 225px;
-    padding-bottom: 280px;
-    text-align: center;
- 	-webkit-background-size: cover;
-	   -moz-background-size: cover;
-	     -o-background-size: cover;
-	     	background-size: cover;
- }
-.banner-black {
-    text-align: center;
-    padding-top: 100px;
-
-}
-.item1 {
-    font-family: "Open Sans",sans-serif;
-    font-size: 44px;
-    font-weight: 44; 
-    text-transform: uppercase;
-    color: #4e4e4e;
-}
-.item1 span {
-	color: #fcac45;
-	
-}
-.item2 {
-	font-family: "Open Sans",sans-serif;
-	font-size: 20px;
-	color: #d5d5d5;
-}
-
-/* about  */
-
-.leftslide img {
-	margin:100px 0 ;
-	
-}
-.text1 {
-	margin: 225px 1px;
-	font-family: "Open Sans",sans-serif;
-	font-size: 18px;
-	line-height: 25px;
-	color: #6c6c6c;
-}
-
-/*  meet our team  */
-
-#team {
- background-color: #070707;
-}
+/* Header  middle text */
 
 .title {
-	padding-top: 100px;
-	text-align: center;
-	font-family: "Open Sans",sans-serif; 
-	font-size: 44px;
-	text-transform: uppercase;
-	color: #fff;
-}
-.title span {
-	color: #fcac45;
-	font-weight: 600;
-
-}
-.icon {
-	margin-top: 30px;
-}
-.had2 {
-	padding-top: 20px;
-    font:  bold 25px/10px "Open Sans"; 
-	color: #fff;
-}
-.had3 {
-	padding: 10px 0 25px;
-	color: #fff;
-}
-.descr {
-	padding-bottom: 70px;
-	font-family: "Open Sans",sans-serif; 
-	font-size: 14px;
-	line-height: 25px;
-	color: #fff;
-}
-
-
-/*  services */
-
-.box {
-	margin-top: 100px;
-	font-family: "Open Sans";
-	font-size: 44px;
-	text-align: center;
-	text-transform: uppercase;
-
-}
-.box span {
-	font-weight: 600;
-}
-.text2 {
-	margin-top: 50px;
-    font: italic 15px "Open Sans";
-	text-align: center;
-	color: #6c6c6c;
-}
-.had4 {
-	font-family: "Open Sans",Semi-bold;
-	font-size: 20px;
-	margin-top: 20px;
-	text-transform: uppercase;
-	color: black;
-}
-.descr2 {
-	font-family: "Open Sans";
-	font-size: 14px;
-	margin-top: 10px;
-	padding-bottom: 100px;
-	line-height: 20px;
-	color: #727272;
-}
-
-/*  clients */
-
-#clients {
-	background-color: #070707;
-}
-.icon2 {
-	height: 125px;
-	margin-top: 75px; 
-	padding-bottom: 100px;
-}
-
-
-/*  portfolio */
-
-.box1{
-	margin-top: 100px;
-	text-align: center;
-}
-.box1 .title1 {
-	font-family: "Open Sans";
-	font-size: 44px;
-	text-transform: uppercase;
-}
-.box1 .title1 span {
-	font-family: "Open Sans",Semi-bold;
-	font-weight: 600;
-}
-
-.text3 {
-	margin-top: 50px;
-    font: italic 15px "Open Sans";
-	text-align: center;
-	color: #6c6c6c;
-}
-
-.menu2 {
-	margin-top: 100px;
-	list-style: none;
 	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
-.menu2-item:first-child {
-	margin-left: 515px;
-	padding-left: 515px;
-}
-.menu-item2 {
-	margin-left: 22px;
-	position: relative;
-}
-.menu__link1 {
-	font-family: "Open Sans", bold;
-	font-size: 14px;
+.text {
+	font-family: "Titillium Web", bold;
+	font-size: 43px;
 	font-weight: 600;
-	position: relative;
+	margin-top: 150px; 
+	color: white;
+}
+
+.btn {
+	display: inline-block;
+	margin-top: 65px;
+	margin-left: 420px;
+	padding-top: 23px;
+	margin-bottom: 200px;
+	font-family: "Titillium Web", Semi-bold;
+	font-size: 18px;
+	font-weight: 600;
 	text-transform: uppercase;
-    color: black;
+	width: 290px;
+	height: 70px;
+	background-color: #eb7d4b;
+	border: 2px solid #eb7d4b;
+	cursor: pointer;
 }
-.menu__link:hover {
-	color: #fcac45;
+
+.btn a {
+	text-decoration: none;
+	color: white;
 }
+
+.btn:hover {
+	background-color: #db7546;
+
+}
+
+
+/* Services  */
+
+#services {
+	background-color: #17c2a4;
+}
+
+.title-services {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 115px;
+	color: #3c4761;
+}
+
+.text-servicse {
+	font-family: "Titillium Web", bold;
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: uppercase;
+	color: white;
+	letter-spacing: 5px;
+}
+.title-descr {
+	display: flex;
+	justify-content: center;
+	margin-top: 50px;
+	font-family: "Titillium Web", Regular;
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+	line-height: 25px;
+}
+
+/* Services  icons */
+
+.icon {
+	height: 130px;
+	margin-top: 80px;
+}
+.title1-services {
+	margin-top: 60px;
+	font-family: "Titillium Web", bold;
+	font-size: 24px;
+	font-weight: 600;
+	color: white;
+	text-transform: uppercase;
+}
+.descr-services {
+	margin-top: 30px;
+	font-family: "Titillium Web", light;
+	font-size: 16px;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 100px;
+}
+
+
+/* Team  */
+
+#team {
+	background-color: #e7f1f8;
+}
+.text-team {
+	font-family: "Titillium Web", bold;
+	font-size: 42px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 120px;
+	letter-spacing: 5px;
+	color: #3c4761;
+}
+.team-descr {
+	margin-top: 30px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	color: #3c4761;
+}
+
+/* Team  icon */
+
+.icon2 {
+	margin-top: 80px;
+}
+.title1-team {
+	font-family: "Titillium Web", bold;
+	font-size: 24px;
+	font-weight: 600;
+	margin-top: 30px;
+	color: #3c4761;
+}
+.title2-team {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	color: #55c2e9;
+	margin-top: 5px;
+	
+}
+.descr-team {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	margin-top: 15px;
+	color: #3c4761;
+}
+/* Team  social */
+.social {margin-top: 20px;}
+
+.social a {
+   display: inline-block;
+   margin: 0 3px;
+   width: 40px;
+   height: 40px;
+   border: 3px solid #222;
+   background: url(../img/social-sprite.png) no-repeat;
+     -webkit-border-radius: 50%;
+   	    -moz-border-radius: 50%;
+   	      -o-border-radius: 50%;
+   	         border-radius: 50%;
+   	         margin-bottom: 100px;
+}
+
+.social a.black {
+	background-color: #222;
+}
+
+.social a.ic-tw {
+  background-position: 0 0 ;
+}
+.social a.ic-tw:hover{
+	border-color: #00aced;
+	background-color: #00ACED;
+    background-position: 0 -40px ;
+}
+
+.social a.ic-tw.black {
+	background-position: 0 -40px ;
+}
+.social a.ic-fb {
+  background-position: -40px 0;
+}
+.social a.ic-fb:hover {
+	border-color: #3b5998;
+	background-color: #3b5998;
+    background-position: -40px -40px;
+}
+
+.social a.ic-fb.black {
+	background-position: -40px -40px ;
+}
+.social a.ic-pn {
+  background-position: -80px 0;
+}
+.social a.ic-pn:hover {
+	border-color: #cb2028;
+	background-color: #cb2028;
+    background-position: -80px -40px;
+}
+
+.social a.ic-pn.black {
+	background-position: -80px -40px ;
+}
+.social a.ic-gl {
+  background-position:  -120px 0;
+}
+.social a.ic-gl:hover {
+	border-color: #d95232;
+	background-color: #d95232;
+    background-position:  -120px -40px;
+}
+
+.social a.ic-gl.black {
+	background-position: -120px -40px ;
+}
+
+/* Skills */
+
+#skills {
+	background-color: #fff;
+}
+.text-skills {
+	font-family: "Titillium Web", bold;
+	font-size: 42px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 120px;
+	letter-spacing: 5px;
+	color: #3c4761;
+}
+
+.skills-descr {
+	margin-top: 30px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 19px;
+	font-weight: 400;
+	color: #3c4761;
+}
+
+/* Team  icon */
 
 .icon3 {
+	margin-top: 70px;
+	height: 190px;
+}
+.title1-skills {
+	font-family: "Titillium Web", bold;
+	font-size: 24px;
+	font-weight: 600;
+	text-transform: uppercase;
 	margin-top: 30px;
+	color: #3c4761;
+	margin-bottom: 100px;
 }
 
-/*  testimonialis */
+
+/* Portfolio  */
+
+#portfolio {
+	background-color: #ffdd99;
+	
+}
+.text-port {
+	font-family: "Titillium Web", bold;
+	font-size: 42px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 120px;
+	letter-spacing: 5px;
+	color: #393939;
+}
+.port-descr {
+	margin-top: 30px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 30px;
+}
+
+/* Portfolio  icon */
+
+.icon4 {
+	margin-top: 50px;
+}
+.title-portfolio {
+	margin-top: 20px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 18px;
+	font-weight: 500;
+}
+/* Portfolio  btn*/
+
+.btn-port {
+	display: inline-block;
+	margin-top: 65px;
+	padding-top: 23px;
+	margin-bottom: 200px;
+	font-family: "Titillium Web", Semi-bold;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 290px;
+	height: 70px;
+	background-color: #17c2a4;
+	border: 2px solid #17c2a4;
+	border-radius: 4%;
+	cursor: pointer;
+}
+.btn-port a {
+	text-decoration: none;
+    color: white;
+}
+.btn-port:hover {
+	background-color: #36d7bb;
+}
+
+/* Testimonialis */
 
 #testimonialis {
-	margin-top: 100px;
-	background-color: #0b0b0b;
+	background-color: #d74680;
 }
-.title2 {
-	padding-top: 50px;
-	font-family: "Open Sans";
-	font-size: 44px;
+
+.text-test {
+	font-family: "Titillium Web", bold;
+	font-size: 42px;
+	font-weight: 600;
 	text-transform: uppercase;
-	text-align: center;
+	margin-top: 120px;
+	letter-spacing: 5px;
 	color: #fff;
 }
-.title2 span {
-	font-weight: 600;
-}
-.descr3 {
-	font-family: "Open Sans";
-	font-size: 18px;
-	text-align: center;
-	padding-top: 10px;
+.test-descr {
+	margin-top: 30px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 30px;
+	color: #fff;
 }
 
-/*  contact */
+/* Testimonialis  icons */
 
-.title3 {
-	padding-top: 50px;
-	font-family: "Open Sans";
-	font-size: 44px;
-	text-transform: uppercase;
-	text-align: center;
-	color: #000;
-}
-.title3 span {
-	font-weight: 600;
-	color: #fcac45;
-}
-.row {
+.col-lg-6 {
 	margin-top: 70px;
 }
+.icon5 {
+	float: left;
+}
 
-#contact input[type="text"],
-#contact textarea {
-	width: 60%;
-	padding: 15px 20px;
-	margin-bottom: 10px;
-	margin-left: 240px;
+.testimonialis-text {
+	font:italic 21px/21px "Titillium Web";
+	font-weight: 300;
+	color: #fff;
+	line-height: 25px;
+}
+.title-testimonialis {
+	display: inline-block;
+	font-family: "Titillium Web", bold;
+	font-size: 24px;
+	font-weight: 600;
+	color: #fff;
+	margin-top: 20px;
+	text-transform: uppercase;
+}
+.title2-testimonialis {
+	font-family: "Titillium Web", sans-serif;
+	font-size: 19px;
+	margin-top: 5px;
+	color: #facd96;
+	margin-left: 100px;
+}
+.title2-testimonialis:last-child {
+	margin-bottom: 100px;
+}
+
+
+/* Get in Touch */
+
+
+#get-in-touch {
+	background-color: #3c5499;
+}
+
+.text-get {
+	font-family: "Titillium Web", bold;
+	font-size: 42px;
+	font-weight: 600;
+	text-transform: uppercase;
+	margin-top: 120px;
+	letter-spacing: 5px;
+	color: #fff;
+}
+.get-descr {
 	margin-top: 30px;
-	font: bold 14px/14px Arial, sans-serif;
-	color: #222;
-	background: #FFF;
-	box-shadow: none;
-	 -webkit-border-radius: 4px;
-   	    -moz-border-radius: 4px;
-   	      -o-border-radius: 4px;
-   	         border-radius: 4px;
+	font-family: "Titillium Web", sans-serif;
+	font-size: 19px;
+	font-weight: 500;
+	line-height: 30px;
+	color: #fff;
 }
 
-#contact input[type="text"] {
-	height: 50px;
-	border: 1px solid #ccc;
-}
-#contact input[type="submit"] {
-    background: #a099b3 url(../img/send.png) no-repeat center;
-    opacity: .8;
-    width: 60%;
+/* Get in Touch input */
+
+#messege input[type="text"] {
 	padding: 15px 20px;
 	margin-bottom: 30px;
-	margin-left: 240px;
-	margin-top: 30px;
-	font: bold 14px/14px Arial, sans-serif;
-	color: #222;
-	background: #FFF;
-	box-shadow: none;
-	 -webkit-border-radius: 4px;
+	width: 80%;
+	font:  14px/14px "Titillium Web", sans-serif;
+	color: #fff;
+	background: #273a71;
+	-webkit-border-radius: 4px;
    	    -moz-border-radius: 4px;
    	      -o-border-radius: 4px;
    	         border-radius: 4px;
 }
+#messege input[type="text"] {
+	height: 40px;
+	border: 1px solid #273a71;
+}
+#messege textarea {
+	padding: 15px 20px;
+	margin-bottom: 30px;
+	width: 88%;
+	font:  14px/14px "Titillium Web", sans-serif;
+	color: #fff;
+	background: #273a71;
+}
 
-#contact textarea {
-	height: 210px;
-	border: none;
+#messege textarea {
+	height: 85px;
+	border: 1px solid #273a71;
 	resize: none;
 }
 
+/* Get in Touch button */
 
-/*  footer */
+.btn-get {
+	display: inline-block;
+	margin-top: 65px;
+	padding-top: 23px;
+	margin-bottom: 200px;
+	font-family: "Titillium Web", Semi-bold;
+	font-size: 18px;
+	font-weight: 600;
+	text-transform: uppercase;
+	width: 290px;
+	height: 70px;
+	background-color: #30bae7;
+	border: 2px solid #30bae7;
+	border-radius: 4%;
+	cursor: pointer;
+	margin-bottom: 100px;
+}
+.btn-get a {
+	text-decoration: none;
+    color: white;
+}
+.btn-get:hover {
+	background-color: #067ca2;
+}
 
-#end {
-	background-color: #222222;
+
+/* Footer */
+.footer {
+	background-color: #344b8e;
+    height: 100px;
 }
-.title4 {
-	padding-top: 50px;
-	padding-bottom:  25px;
-	font-family: "Open Sans";
-	font-size: 14px;
-	color: #808080;
+
+.col-lg-2 {
+	line-height: 100px;
+	font-family: "Titillium Web", Semi-bold;
+	font-size: 24px;
+	font-weight: 600;
 }
-.title4 span {
-    font-weight: 600;
-	color: #fcac45;
+.col-lg-2 a{
+	color: #fff;
+	text-decoration: none;
+}
+a:hover {
+	color: #30bae7;
 }
