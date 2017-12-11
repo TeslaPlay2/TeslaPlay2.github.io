@@ -1,6 +1,6 @@
 /* Header */
 
-.header {
+#header {
 	background-color: #87509c;
 }
 
@@ -509,7 +509,7 @@
 
 
 /* Footer */
-.footer {
+#footer {
 	background-color: #344b8e;
     height: 100px;
 }
