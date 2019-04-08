@@ -153,6 +153,8 @@ header {
 		transition: color 0.3s linear;
 		border-radius: 5px;
 		margin-right: 15px;
+		margin-bottom: 10px;
+		text-align: center;
 	}
 
 	.btn__download:hover {
@@ -187,9 +189,11 @@ header {
 }
 .banner__right {
 	width: 50%;
+	text-align: center;
 		img{
-			max-width: 100%;
-			box-sizing: border-box;
+			max-width: 83%;
+			float: right;
+			
 		}
 	}
 
@@ -534,7 +538,7 @@ img{
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	width: 66%;
+	
 	font-size: 35px;
 }
 .like_decription{
@@ -564,9 +568,9 @@ img{
 	align-items: center;
 	transition: color 0.3s linear;
 	border-radius: 5%;
-	margin-right: 15px;
 	padding-right: 20px;
-	width: 50%;
+	width: 45%;
+	text-align: center;
 }
 
 .btn__download:hover {
@@ -591,7 +595,9 @@ img{
 	align-items: center;
 	transition: color 0.3s linear;
 	border-radius: 5%;
-	width: 50%;
+	width: 45%;
+	text-align: center;
+	float: right;
 }
 .btn__view:hover {
 	background-color: #008ed6;
@@ -926,6 +932,8 @@ footer {
 				text-align: center;
 				.btn__download {
 					margin-bottom: 20px;
+					width: 58%;
+					text-align: center;
 				}
 
 
@@ -938,7 +946,7 @@ footer {
 				img {
 					margin-right: 0;
 					float: none;
-					width: 100%;
+					width: 90%;
 				}
 			}
 		}
@@ -980,6 +988,7 @@ footer {
 						text-align: left;
 						width: 80%;
 						margin: 0 auto;
+
 					}
 				}
 			}
@@ -1080,6 +1089,7 @@ footer {
 				}
 				.like_desc_right {
 					margin-right: 15px;
+					margin-bottom: 10px;
 				}
 			}
 
@@ -1089,10 +1099,16 @@ footer {
 				flex-wrap: wrap;
 				width: 100%;
 				.btn__download {
+					text-align: center;
+					width: 55%;
 					margin-bottom: 20px;
 					margin-right: 0;
 					margin-right: 10px;
 					margin-left: 10px;
+				}
+				.btn__view {
+					text-align: center;
+					width: 55%;
 				}
 			}
 		}
@@ -1132,12 +1148,17 @@ footer {
 			}
 		}
 		&__box {
-
 			position: static;
 			margin: 0 auto;
 			width: 90%;
 			bottom: 0;
 			left: 0;
+			.contact__box__left {
+				width: 100%;
+			}
+			.contact__box__right  {
+				width: 100%;
+			}
 		}
 	}
 
@@ -1162,7 +1183,7 @@ footer {
 
 }
 
-@media screen and (min-width: 768px) and (max-width: 900px) {
+@media screen and (min-width: 768px) and (max-width: 899px) {
 
 	header {
 
@@ -1182,6 +1203,7 @@ footer {
 
 			.banner__left {
 				text-align: center;
+				width: 100%;
 				p {
 					padding-right: 10px;
 					padding-left: 10px;
@@ -1199,7 +1221,7 @@ footer {
 				img {
 					margin-right: 0;
 					float: none;
-					width: 90%;
+					width: 70%;
 				}
 			}
 		}
@@ -1322,6 +1344,7 @@ footer {
 				flex-wrap: wrap;
 				text-align: center;
 				justify-content: center;
+				width: 100%;
 				.like_decription {
 					margin-bottom: 0;
 					margin-left: 30px;
@@ -1337,10 +1360,16 @@ footer {
 				flex-wrap: wrap;
 				width: 100%;
 				.btn__download {
+					text-align: center;
 					margin-bottom: 20px;
 					margin-right: 0;
 					margin-right: 10px;
 					margin-left: 10px;
+
+				}
+				.btn__view {
+					text-align: center;
+
 				}
 			}
 		}
@@ -1428,7 +1457,9 @@ footer {
 
 	.like {
 		&_container {
-			height: 200px;
+			.like_decription {
+				margin-bottom: 0;
+			}
 		}
 	}
 
@@ -1441,5 +1472,149 @@ footer {
 		}
 	}
 
+}
+
+
+
+@media screen and (min-width: 900px) and (max-width: 1200px) {
+	.banner {
+		height: 670px;
+		.banner__right {
+			width: 60%;
+			text-align: center;
+			img {
+				max-width: 100%;
+				float: right;
+			}
+		}
+	}
+
+	.details {
+		&_container {
+			.details_left {
+				width: 50%;
+				text-align: center;
+				img {
+					width: 80%;
+				}
+			}
+
+			.details_right {
+				.details_titl {
+					margin-top: 50px;
+				}
+
+				.menu_list {
+					margin-bottom: 30px;
+				}
+			}
+		}
+	}
+
+	.customize {
+		&_container {
+			text-align: center;
+
+
+			.customize_left {
+				width: 50%;
+				.customize_top {
+					margin-top: 40px;
+				}
+
+				.customize_bottom {
+					margin-bottom: 50px;
+				}
+			}
+
+
+			.customize_right {
+				width: 50%;
+
+				img {
+					text-align: center;
+					width: 100%;
+					margin-right: 0;
+					float: none;
+				}
+			}
+		}
+	}
+
+	.like {
+		&_container {
+			flex-wrap: wrap;
+			height: 300px;
+
+			.like_left {
+				margin-bottom: 10px;
+				flex-wrap: wrap;
+				text-align: center;
+				justify-content: center;
+				width: 100%;
+				.like_decription {
+					margin-bottom: 0;
+					margin-left: 30px;
+				}
+				.like_desc_right {
+					margin-right: 15px;
+				}
+			}
+
+			.like_right {
+				display: flex;
+				justify-content: center;
+				flex-wrap: wrap;
+				width: 100%;
+				.btn__download {
+					text-align: center;
+					margin-bottom: 20px;
+					margin-right: 0;
+					margin-right: 10px;
+					margin-left: 10px;
+
+				}
+				.btn__view {
+					text-align: center;
+
+				}
+			}
+		}
+	}
+
+	.pricing {
+		&_container {
+			.pricing_item {
+				.pricing_bottom {
+					padding-top: 35px;
+				}
+				.pricing_bottom_btn {
+					margin-top: 15px;
+				}
+			}
+		}
+	}
+
+}
+
+@media screen and (min-width: 900px) and (max-width: 963px) {
+	.banner {
+		height: 620px;
+		.banner__left {
+			width: 50%;
+		}
+		.banner__right {
+			width: 50%;
+			text-align: center;
+			img {
+				 
+				    width: 100%;
+			}
+		}
+	}
+
+	.pricing_item .pricing_item_three .pricing_bottom {
+		padding-top: 20px;
+	}
 }
 
