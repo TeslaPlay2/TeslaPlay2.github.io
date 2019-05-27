@@ -23,6 +23,32 @@
 @drible: #ea4c89;
 @google: #db3236;
 
+
+
+
+// fonts //
+
+@font-face{
+	font-family: Open Sans;
+	src: url('OpenSans-Bold.ttf');
+}
+@font-face {
+	font-family: OpenSans-ExtraBold;
+	src:url('OpenSans-ExtraBold.ttf');
+}
+@font-face {
+	font-family: OpenSans-Light;
+	src:url('OpenSans-Light.ttf');
+}
+@font-face {
+	font-family: OpenSans-Regular;
+	src:url('OpenSans-Regular.ttf');
+}
+@font-face {
+	font-family: OpenSans-SemiBold;
+	src:url('OpenSans-SemiBold.ttf');
+}
+
 .transition {
 	-webkit-transition:0.2s ease-in;
 	-moz-transition:0.2s ease-in;
@@ -44,12 +70,20 @@
 header {
 	background-image: url(../img/header-img.jpg);
 	background-size: cover;
+	background-position: center;
 }
 
 .header__top {
 	display: flex;
 	justify-content: space-between;
 	padding-top: 30px;
+	.header__top__nav {
+		display: flex;
+		align-items: center;
+	}
+	.menu {
+		cursor: pointer;
+	}
 	h1 {
 		text-transform: uppercase;
 		color: @secodary-color; 
@@ -57,15 +91,18 @@ header {
 		font-weight: 500;
 		font-family: @fonts-sans;
 		text-shadow: 3px 1px 3px white;
+		cursor: pointer;
 	}
 	h2 {
 		line-height: 38px;
 		text-transform: uppercase;
 		color: @secodary-color;
-		margin-right: 10px;
+		display: inline-block;
+		padding-right: 20px;
 		font-size: 14px;
 		font-weight: 500;
 		font-family: @fonts-sans;
+		cursor: pointer;
 	}
 }
 
@@ -107,19 +144,16 @@ header {
 		transition: 0.5s;
 	}
 
-	.arrow {
-		background-color: transparent;
-		padding: 20px 25px;
+	.fa-chevron-down {
+		padding: 20px 22px;
 		border-radius: 40px;
 		color: @secodary-color;
 		font-weight: 700;
-		font-size: 18px; 
+		font-size: 22px; 
 		border: 2px solid @there-color;
 		margin-bottom: 150px;
-		text-transform: uppercase;
-		font-weight: 400;
 	}
-	.arrow:hover {
+	.fa-chevron-down:hover {
 		background-color: #2d343a;
 		transition: 0.5s;
 	}
@@ -198,6 +232,7 @@ header {
 //works header // 
 
 .works__header {
+	text-align: center;
 	h2 {
 		text-transform: uppercase;
 		color: @main-color;
@@ -229,6 +264,7 @@ header {
 	align-items: center;
 	&__item {
 		display: flex;
+		width: 100%;
 		img {
 			width: 20%;
 		}
@@ -279,6 +315,8 @@ header {
 		font-weight: 700;
 		width: 88%;
 		color: @text-blue;
+	}
+	.quotes {
 	}
 	img {
 		text-align: center;
@@ -358,28 +396,65 @@ header {
 				margin-bottom: 15px;
 			}
 			.fa-fa {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				font-size: 25px;
 				border-radius: 30px;
 				cursor: pointer;
 				margin-bottom: 20px;
 			}
-			.fa-twitter-square:hover {
+			.fa-twitter {
+				margin-right: 4px;	
+				background: #303132;
+				padding: 5px;
+				font-size: 15px;
+				color: #c6ccce;
+				border-radius: 50%;
+			}
+			.fa-twitter:hover {
 				color: @twiter;
 				transition: 0.5s;
 			}
-			.fa-linkedin:hover {
+			.fa-linkedin-in {
+				margin-right: 4px;	
+				background: #303132;
+				padding: 5px;
+				font-size: 15px;
+				color: #c6ccce;
+				border-radius: 50%;
+			}
+			.fa-linkedin-in:hover {
 				color: @linkedin;
 				transition: 0.5s;
+			}
+			.fa-envelope {
+				margin-right: 4px;	
+
 			}
 			.fa-envelope:hover {
 				color: @envelope;
 				transition: 0.5s;
 			}
-			.fa-dribbble-square:hover {
+			.fa-dribbble {
+				margin-right: 2px;	
+				padding: 5px;
+				font-size: 19px;
+				
+			}
+			.fa-dribbble:hover {
 				color: @drible;
 				transition: 0.5s;
 			}
-			.fa-google-plus-square:hover {
+			.fa-vimeo-v {
+				margin-right: 2px;	
+				background: #303132;
+				padding: 5px;
+				font-size: 15px;
+				color: #c6ccce;
+				border-radius: 50%;
+			}
+			.fa-vimeo-v:hover {
 				color: @google;
 				transition: 0.5s;
 			}
@@ -420,7 +495,10 @@ header {
 	.brand__body {
 		display: flex;
 		justify-content: space-between;
-		padding: 20px 20px;
+		padding: 40px 40px;
+		.nokia {
+			margin-top: 15px;
+		}
 	}
 }
 
@@ -463,8 +541,23 @@ header {
 	display: flex;
 	&__item {
 		width: 33%;
-		border: 1px solid #eeeeee;
 		margin-bottom: 100px;
+		.item_header {
+			border: 1px solid #eeeeee;
+		}
+		.item__body {
+			border: 1px solid #eeeeee;
+			border-bottom: transparent;
+			border-top: transparent;
+		}
+		.item__footer {
+			border: 1px solid #eeeeee;
+			border-top: transparent;
+
+		}
+		.item__header__body {
+			border: 1px solid #eeeeee;
+		}
 		h3 {
 			font-size: 22px;
 			font-weight: 700;
@@ -472,6 +565,10 @@ header {
 			padding-top: 20px;
 			padding-bottom: 10px;
 			color: @dark-blue;
+		}
+		.item__top {
+			
+
 		}
 		h2 {
 			font-size: 40px;
@@ -530,6 +627,11 @@ header {
 			font-weight: 400;
 			margin-bottom: 20px;
 		}
+		.button:hover {
+				background-color: #e0e0e1;
+				transition: 0.5s;
+				color: @main-color;
+			}
 	}
 }
 
@@ -543,17 +645,18 @@ header {
 	.contact_right {
 		width: 50%;
 		background-image: url(../img/overlay.jpg);
-		background-image: cover;
-		display: block;
+		background-size: cover;
+		background-position: center;
 		padding-top: 50px;
 		form {
-			text-align: center;
+				text-align: center;
 			label {
 				color: @white-color;
 				font-size: 16px;
 				font-family: @fonts-sans;
 			}
 			.form__name {
+				display: block;
 				padding-bottom: 20px;
 			}
 			.form__action {
@@ -622,40 +725,77 @@ footer {
 	}
 	.footer__right {
 		display: flex;
-		padding-top: 60px;
-		padding-bottom: 60px;
+		align-items: center;
+		p {
+			font-size: 14px;
+			color: @main-color;
+			padding-bottom: 15px;
+			padding-right: 30px;
+		}
 
 		.fa-fa {
+				display: flex;
+				align-items: center;
+				justify-content: center;
 				font-size: 25px;
 				border-radius: 30px;
 				cursor: pointer;
+				margin-bottom: 20px;
 			}
-			.fa-twitter-square:hover {
+			.fa-twitter {
+				margin-right: 4px;	
+				background: #303132;
+				padding: 5px;
+				font-size: 15px;
+				color: #c6ccce;
+				border-radius: 50%;
+			}
+			.fa-twitter:hover {
 				color: @twiter;
 				transition: 0.5s;
 			}
-			.fa-linkedin:hover {
+			.fa-linkedin-in {
+				margin-right: 4px;	
+				background: #303132;
+				padding: 5px;
+				font-size: 15px;
+				color: #c6ccce;
+				border-radius: 50%;
+			}
+			.fa-linkedin-in:hover {
 				color: @linkedin;
 				transition: 0.5s;
+			}
+			.fa-envelope {
+				margin-right: 4px;	
+
 			}
 			.fa-envelope:hover {
 				color: @envelope;
 				transition: 0.5s;
 			}
-			.fa-dribbble-square:hover {
+			.fa-dribbble {
+				margin-right: 2px;	
+				padding: 5px;
+				font-size: 19px;
+				
+			}
+			.fa-dribbble:hover {
 				color: @drible;
 				transition: 0.5s;
 			}
-			.fa-google-plus-square:hover {
+			.fa-vimeo-v {
+				margin-right: 2px;	
+				background: #303132;
+				padding: 5px;
+				font-size: 15px;
+				color: #c6ccce;
+				border-radius: 50%;
+			}
+			.fa-vimeo-v:hover {
 				color: @google;
 				transition: 0.5s;
 			}
-			p {
-				font-size: 14px;
-				color: @main-color;
-				line-height: 25px;
-				font-weight: 700;
-				margin-right: 20px;
+			
 		}
-	}
 }

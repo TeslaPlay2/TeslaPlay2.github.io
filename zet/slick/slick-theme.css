@@ -113,6 +113,7 @@
     content: '←';
 }
 
+
 /* Dots */
 .slick-dotted.slick-slider
 {
@@ -134,6 +135,7 @@
 
     text-align: center;
 }
+
 .slick-dots li
 {
     position: relative;
@@ -145,6 +147,7 @@
     cursor: pointer;
     background-color: transparent;
 }
+
 .slick-dots li button
 {
     font-size: 0;
@@ -159,18 +162,22 @@
     cursor: pointer;
 
     color: transparent;
-    border: 0;
+    border: 1px solid grey;
+    border-radius: 50%;
     outline: none;
     background: transparent;
 }
+
 .slick-dots li button:hover,
 .slick-dots li button:focus
 {
+    background: #2b3746;
     outline: none;
 }
 .slick-dots li button:hover:before,
 .slick-dots li button:focus:before
 {
+
     opacity: 1;
 }
 .slick-dots li button:before
@@ -186,8 +193,9 @@
     width: 20px;
     height: 20px;
 
-    content: '•';
+    content: '';
     text-align: center;
+    cursor: pointer;
 
     opacity: .25;
     color: orangered;
