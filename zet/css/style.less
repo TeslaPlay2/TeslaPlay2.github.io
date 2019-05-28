@@ -28,10 +28,6 @@
 
 // fonts //
 
-@font-face{
-	font-family: Open Sans;
-	src: url('OpenSans-Bold.ttf');
-}
 @font-face {
 	font-family: OpenSans-ExtraBold;
 	src:url('OpenSans-ExtraBold.ttf');
@@ -42,7 +38,12 @@
 }
 @font-face {
 	font-family: OpenSans-Regular;
-	src:url('OpenSans-Regular.ttf');
+	font-weight: normal;
+    font-style: normal;
+
+    
+	
+	src:url(../fonts/Open Sans/OpenSans-Regular.ttf);
 }
 @font-face {
 	font-family: OpenSans-SemiBold;
@@ -65,6 +66,24 @@
 
 
 // header //
+
+// scroll to top //
+#toTop {
+	width: 50px;
+	border-radius: 15%;
+	border: 1px solid #ccc;
+	background: #29323c;
+	text-align: center;
+	padding: 10px;
+	position: fixed;
+	bottom: 10px; /* отступ кнопки от нижнего края страницы*/
+	right: 10px;
+	cursor :pointer;
+	display: none;
+	color: @grey-color;
+	font-family: verdana;
+	font-size: 11px;
+}
 
 
 header {
@@ -250,7 +269,7 @@ header {
 		padding-bottom: 10px;
 	}
 	.line {
-		width: 4%;
+		width: 2.5%;
 		border: 1.5px solid @color-line;
 		display: inline-block;
 		margin-bottom: 60px;
@@ -369,6 +388,7 @@ header {
 			border: 1.5px solid @white-color;
 			display: inline-block;
 			margin-bottom: 60px;
+			background-color: @white-color;
 		}
 	}
 
@@ -437,9 +457,12 @@ header {
 				transition: 0.5s;
 			}
 			.fa-dribbble {
-				margin-right: 2px;	
-				padding: 5px;
-				font-size: 19px;
+				margin-right: 2px;
+				color: #c6ccce;
+				background: #303132;
+				border-radius: 50%;
+				padding: 3px;
+				font-size: 18px;
 				
 			}
 			.fa-dribbble:hover {
@@ -468,11 +491,11 @@ header {
 	.team__footer {
 		.arrow {
 		background-color: transparent;
-		padding: 10px 15px;
+		padding: 13px 35px;
 		border-radius: 40px;
 		color: @secodary-color;
 		font-weight: 700;
-		font-size: 18px; 
+		font-size: 16px; 
 		border: 2px solid @there-color;
 		text-transform: uppercase;
 		font-weight: 400;
@@ -647,46 +670,61 @@ header {
 		background-image: url(../img/overlay.jpg);
 		background-size: cover;
 		background-position: center;
-		padding-top: 50px;
 		form {
+			.form__container {
+				width: 420px;
+				height: 320px;
+				margin: 0 auto;
+				margin-top: 100px;
 				text-align: center;
-			label {
-				color: @white-color;
-				font-size: 16px;
-				font-family: @fonts-sans;
-			}
-			.form__name {
-				display: block;
-				padding-bottom: 20px;
-			}
-			.form__action {
-				width: 220px;
-				height: 40px;
-				background-color: transparent;
-				border: 1px solid #c8c3c2;
-			}
-			#message {
-				width: 220px;
-				height: 100px;
-				background-color: transparent;
-				border: 1px solid #c8c3c2;
-			}
-		}
-		.contact__bottom {
-			text-align: center;
-			margin-left: 180px;
-			.button {
-				background-color: transparent;
-				padding: 12px 30px;
-				color: @secodary-color;
-				font-weight: bold;
-				font-size: 15px; 
-				border: 2px solid #c8c3c2;
-				font-weight: 400;
-			}
-			.button:hover {
-				background-color: #2e2e33;
-				transition: 0.5s;
+
+
+				label {
+					color: @white-color;
+					font-size: 16px;
+					font-family: @fonts-sans;
+					margin-right: 50px;
+				}
+				label:last-child {
+					background: red;
+				}
+				.form__action {
+					width: 280px;
+					height: 40px;
+					background-color: transparent;
+					border: 1px solid #c8c3c2;
+					margin-bottom: 20px;
+					align-items: center;
+					border-radius: 2px;
+				}
+				
+				.form__message {
+					width: 280px;
+					height: 130px;
+					background-color: transparent;
+					border: 1px solid #c8c3c2;
+					margin-bottom: 20px;
+					margin-right: 12px;
+					border-radius: 2px;
+				}
+				.contact__bottom {
+					text-align: center;
+					width: 97%;
+					.button {
+						float: right;
+						background-color: transparent;
+						padding: 12px 30px;
+						color: @secodary-color;
+						font-weight: bold;
+						font-size: 15px; 
+						border: 2px solid #c8c3c2;
+						font-weight: 400;
+					}
+					.button:hover {
+						background-color: #2e2e33;
+						transition: 0.5s;
+					}
+				}
 			}
 		}
 	}
@@ -775,9 +813,12 @@ footer {
 				transition: 0.5s;
 			}
 			.fa-dribbble {
-				margin-right: 2px;	
-				padding: 5px;
-				font-size: 19px;
+				margin-right: 2px;
+				color: #c6ccce;
+				background: #303132;
+				border-radius: 50%;
+				padding: 3px;
+				font-size: 18px;
 				
 			}
 			.fa-dribbble:hover {

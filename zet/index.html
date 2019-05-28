@@ -13,6 +13,7 @@
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+	<DIV ID = "toTop" > ^</DIV >
 	<header>
 		<div class="wrapper">
 			<div class="header__top">
@@ -30,12 +31,12 @@
 
 			</div>
 			<div class="header__body">
-				<h2 class="header__body__title wow fadeInUp">Something Nothing</h2>
+				<h2 class="header__body__title wow fadeOutRight">Something Nothing</h2>
 				<p class="header__description">Enean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim iam ultricies nisi eleifend tellus.</p>
 				<div class="button">
 					<input class="btn" type="button" name="LET'S TALK" value="LET'S TALK">
 				</div>
-				<i class="fas fa-chevron-down"></i>
+				<a  ID = "toDown" href="#"><i class="fas fa-chevron-down"></i></a>
 			</div>
 		</div>
 	</header>
@@ -291,7 +292,7 @@
 	<section id="contact">
 			<div class="contact__container">
 				<div class="contact_left">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253852.95709636083!2d106.80513204651446!3d-6.203788849749838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2z0JTQttCw0LrQsNGA0YLQsCwg0JjQvdC00L7QvdC10LfQuNGP!5e0!3m2!1sru!2sru!4v1558800683968!5m2!1sru!2sru" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d253852.95709636083!2d106.80513204651446!3d-6.203788849749838!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f3e945e34b9d%3A0x5371bf0fdad786a2!2z0JTQttCw0LrQsNGA0YLQsCwg0JjQvdC00L7QvdC10LfQuNGP!5e0!3m2!1sru!2sru!4v1558800683968!5m2!1sru!2sru" width="100%" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 				</div>
 				<div class="contact_right">
 					<form action="form">
@@ -310,13 +311,14 @@
 							</div>
 							<div class="form__name">
 								<label class="message" for="name">Message</label>
-								<textarea name="message" id="message" cols="30" rows="10" required></textarea>
+								<input class="form__message"  type="phone" name="phone"  required>
+							</div>
+							<div class="contact__bottom">
+								<input class="button" type="button" name="arrow" value="Submit">
 							</div>
 						</div>
+						
 					</form>
-					<div class="contact__bottom">
-						<input class="button" type="button" name="arrow" value="Submit">
-					</div>
 				</div>
 			</div>
 	</section>
@@ -374,10 +376,35 @@
 
 	<script type="text/javascript" src="js/qjuery.js" ></script>
 	<script type="text/javascript" src="slick/slick.min.js"></script>
-	<script type="text/javascript" src="js/wow.min.js"></script>
+	<script src="js/wow.min.js" ></script>
 	<script>
-      new WOW().init();
-  	</script>
+		new WOW().init();
+	</script>
+	<script type="text/javascript">
+			$(function() {
+			 
+			$(window).scroll(function() {
+			 
+			if($(this).scrollTop() != 0) {
+			 
+			$('#toTop').fadeIn();
+			 
+			} else {
+			 
+			$('#toTop').fadeOut();
+			 
+			}
+			 
+			});
+			 
+			$('#toTop').click(function() {
+			 
+			$('body,html').animate({scrollTop:0},800);
+			 
+			});
+			 
+			});			 
+	</script>
 	<script src="js/script.js"></script>
 
 
