@@ -14,7 +14,7 @@ $(function(){
 		var from = $ ('#fromDate')
 		.datepicker({
 			dateFormat: "yy-mm-dd",
-			changeMonth: true
+			changeMonth: true,
 		})	
 		.on( 'change', function() {
 			to.datepicker('option','minDate', getDate(this));
