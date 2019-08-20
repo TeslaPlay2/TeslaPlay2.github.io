@@ -1,333 +1,209 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>CUDA</title>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,400,600" rel="stylesheet">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/style.css">
-   
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>monblanproject</title>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header id="header" class="header">
+		<div class="wrapper">
+			<div class="header__container">
+				<div class="header__container__left">
+					<div class="header__logo"><img src="img/Logo.png" alt="image-logo"></div>
+				</div>
+				<div class="header__container__right">
+					<div class="header__top">
+						<h1 class="header__title">monblanproject</h1>
+						<div class="header__start">
+							<p class="header__start__date">Start on 17-02-2016</p>
+						</div>
+					</div>
+					<div class="header__middle">
+						<p class="header__amount"><span>870</span>posts</p>
+						<p class="header__amount"><span>11,787</span>followers</p>
+						<p class="header__amount"><span>112</span>following</p>
+					</div>
+					<div class="header__bottom">
+						<p>Date</p>
+						<input type="text" id="fromDate" placeholder="from" autocomplete="off" >
+						<input type="text" id="toDate" placeholder="to" autocomplete="off" >
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<section id="media" class="media">
+		<div class="wrapper">
+			<div class="media__container">
+				<div class="media__container__item" style="background-image: url(./img/fisrt-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/second-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/third-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-play"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+						<div class="media__bootom">
+							<h3>Image upload: 11-04-2016</h3>
+						</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/fourth-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/fifth-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-play"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-play"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/sixth-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/seven-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/eighth-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__container__item" style="background-image: url(./img/ninth-image.png); background-repeat: no-repeat; background-position: center;">
+					<div class="media__container__box">
+						<div class="media__center">
+							<span>Today</span>
+							<div><i class="fas fa-heart"></i>128</div>
+							<div><i class="fas fa-comment-alt"></i>31</div>
+						</div>
+						<div class="media__center">
+							<span>9-08-2016</span>
+							<div><i class="fas fa-heart"></i>67</div>
+							<div><i class="fas fa-comment-alt"></i>22</div>
+						</div>
+					</div>
+					<div class="media__bootom">
+						<h3>Image upload: 11-04-2016</h3>
+					</div>
+				</div>
+				<div class="media__btn">
+					<a href="#" class="media__btn__link">load more</a>
+				</div>
+			</div>
+		</div>
+	</section>
 
 
-  </head>
-  <body>
-  	<!-- Header-->
-	  	<header id="header">
-
-	  		<!-- Header__top-->
-	  		<div class="container">
-	  			<div class="row-top">
-	  				<div class="col-lg-6 logo">
-	  					<img src="img/logo.png" alt="logo">
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<nav class="navigator">
-	  						<ul class="menu">
-	  							<li class="menu-item"><a href="#home" class="menu-link">Home</a></li>
-	  							<li class="menu-item"><a href="#team" class="menu-link">About</a></li>
-	  							<li class="menu-item"><a href="#portfolio" class="menu-link">Work</a></li>
-	  							<li class="menu-item"><a href="#testimonialis" class="menu-link">Blog</a></li>
-	  							<li class="menu-item"><a href="#get-in-touch" class="menu-link">Contact</a></li>
-	  						</ul>
-	  					</nav>
-	  				</div>
-	  			</div>
-	  			<!-- Header__middle-->
-	  				<div class="title">
-	  					<h1 class="text">
-	  						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-	  						 Hi there! We are the new kids on the block<br/>
-							and we build awesome websites and mobile apps.
-	  					</h1>
-	  				</div>
-	  				<!-- Header__bottom-->
-	  				<div class="btn">
-	  					<a target="_blank" href="https://vk.com/jk325">work with us!</a>
-	  				</div>
-	  		</div>
-
-	  	</header>
-
-
+	<script src="js/qjuery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/script.js"></script>
 	
-
-         <!-- Services  -->
-
-	  	<section id="services">
-	  		<div class="container">
-	  			<div class="row text-center">
-	  				<div class="title-services">
-	  					<h1 class="text-servicse">
-	  					   services we provide
-	  					</h1>
-	  				</div>
-	  				<p class="title-descr">
-	  						We are working with both individuals and businesses
-	  						from all over the globe <br/>
-                            to create awesome websites and applications.
-	  				</p>
-	  				<div class="col-lg-3">
-	  					<img class="icon wow slideInUp" src="img/flag.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Branding</h1>
-	  					<p class="descr-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Lorem ipsum dolor sit amet,<br> 
-                         consectetuer adipiscing elit,<br> sed diam nonummy nibh.</p>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon wow slideInUp" src="img/pencil.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Design</h1>
-	  					<p class="descr-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Sed ut perspiciatis unde <br> omnis iste natus error sit <br> voluptatem  </p>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon wow slideInUp" src="img/shester.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Development</h1>
-	  					<p class="descr-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">At vero eos et accusamus et <br> iusto odio dignissimos qui <br> blanditiis praesentium.</p>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon wow slideInUp" src="img/rocket.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">rocket science</h1>
-	  					<p class="descr-services wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Et harum quidem rerum est <br> et expedita distinctio. Nam <br> libero tempore.</p>
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</section>
-
-
-	  	<section id="team">
-	  		<div class="container">
-	  			<div class="row text-center">
-	  				<div class="title-team">
-	  					<h1 class="text-team">
-	  					meet our beautiful team
-	  					</h1>
-	  				</div>
-	  				<p class="team-descr">
-	  					We are a small team of designers and developers, who help brands with big ideas.
-	  				</p>
-	  				<div class="col-lg-3">
-	  					<img class="icon2 wow slideInRight" src="img/fotos/foto5.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">ANNE HATHAWAY</h1>
-	  					<h2 class="title2-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">CEO / Marketing Guru</h2>
-	  					<p class="descr-team wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Lorem ipsum dolor sit amet, <br>
-						 consectetuer adipiscing elit,<br> sed diam nonummy
-						 nibh<br> euismod tincidunt ut laoreet<br> dolore magna.</p>
-						  <div class="social">
-	 						<a target="_blank" href="https://twitter.com" class="ic-tw wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://www.facebook.com" class="ic-fb wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://plus.google.com" class="ic-gl wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 					</div>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon2 wow slideInRight" src="img/fotos/foto5.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">Kate Upton</h1>
-	  					<h2 class="title2-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">Creative Director</h2>
-	  					<p class="descr-team wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Duis aute irure dolor in in<br> voluptate velit esse cillum<br> dolore fugiat nulla pariatur.<br> Excepteur sint occaecat non<br> diam proident.
-                         <div class="social">
-	 						<a target="_blank" href="https://twitter.com" class="ic-tw wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://www.facebook.com" class="ic-fb wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://plus.google.com" class="ic-gl wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 					</div>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon2 wow slideInRight" src="img/fotos/foto5.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">Olivia Wilde</h1>
-	  					<h2 class="title2-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">Lead Designer</h2>
-	  					<p class="descr-team wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Nemo enim ipsam voluptas<br> sit aspernatur aut odit aut<br> fugit, sed quia consequuntur<br> magni dolores eos qui ratione<br> voluptatem nesciunt.</p>
-                          <div class="social">
-	 						<a target="_blank" href="https://twitter.com" class="ic-tw wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://www.facebook.com" class="ic-fb wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://plus.google.com" class="ic-gl wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 					</div>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon2 wow slideInRight" src="img/fotos/foto5.png" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title1-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">Ashley Greene</h1>
-	  					<h2 class="title2-team wow slideInLeft" data-wow-duration="1s" data-wow-offset="150">SEO / Developer</h2>
-	  					<p class="descr-team wow slideInUp" data-wow-duration="1s" data-wow-offset="150">Sed ut perspiciatis unde<br> omnis iste natus error sit<br> voluptatem accusantium<br> doloremque laudantium,<br> totam rem aperiam.</p>
-                          <div class="social">
-	 						<a target="_blank" href="https://twitter.com" class="ic-tw wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://www.facebook.com" class="ic-fb wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 						<a target="_blank" href="https://plus.google.com" class="ic-gl wow slideInUp" data-wow-duration="1s" data-wow-offset="150">&nbsp;</a>
-	 					</div>
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</section>
-
-	  	<section id="skills">
-	  		<div class="container">
-	  			<div class="row text-center">
-	  				<div class="title-skills">
-	  				<h1 class="text-skills">
-	  					we got skills!
-	  					</h1>
-	  				</div>
-	  				<p class="skills-descr">
-	  					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod<br>
-						tempor incididunt ut labore et dolore magna aliqua.
-	  				</p>
-	  				<div class="col-lg-3">
-	  					<img class="icon3" src="img/skills/skil1.png">
-	  					<h1 class="title1-skills">Web Design</h1>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon3" src="img/skills/skil2.png">
-	  					<h1 class="title1-skills">HTML / CSS</h1>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon3" src="img/skills/skil3.png">
-	  					<h1 class="title1-skills">GRAPHIC DESIGN</h1>
-	  				</div>
-	  				<div class="col-lg-3">
-	  					<img class="icon3" src="img/skills/skil4.png">
-	  					<h1 class="title1-skills">UI / UX</h1>
-	  				</div>
-	  			</div>
-	  		</div>	
-	  	</section>
-
-
-	  	<section id="portfolio">
-	  		<div class="container">
-	  			<div class="row text-center">
-	  				<div class="title-port">
-	  					<h1 class="text-port">
-	  						our portfolio
-	  					</h1>
-	  				</div>
-	  				<p class="port-descr">Neque porro quisquam est, 
-	  				qui dolorem ipsum quia dolor sit amet <br>
- 					consectetur, adipisci velit, sed quia non numquam	
-	  				</p>
-	  				<div class="col-lg-6">
-	  					<img class="icon4 wow flipInX" src="img/portfolio/1.png" alt="pc" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title-portfolio">Isometric Perspective Mock-Up</h1>
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<img class="icon4 wow flipInX" src="img/portfolio/2.png" alt="pc" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title-portfolio">Time Zone App UI</h1>
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<img class="icon4 wow flipInX" src="img/portfolio/3.png" alt="pc" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title-portfolio">Viro Media Players UI</h1>
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<img class="icon4 wow flipInX" src="img/portfolio/4.png" alt="pc" data-wow-duration="1s" data-wow-offset="150">
-	  					<h1 class="title-portfolio">Blog / Magazine Flat UI Kit</h1>
-	  				</div>
-	  				<div class="btn-port wow bounceInUp"  data-wow-offset="150">
-	  					<a  href="#">load more projects</a>
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</section>
-
-	  	<section id="testimonialis">
-	  		<div class="container">
-	  			<div class="row text-center">
-	  				<div class="title-test">
-	  					<h1 class="text-test">
-	  						what poeple say about us
-	  					</h1>
-	  				</div>
-	  				<p class="test-descr">Our clients love us!</p>
-	  				<div class="col-lg-6">
-	  					<img class="icon5 wow jackInTheBox" src="img/Base1.png" alt="pc">
-	  					<p class="testimonialis-text wow jackInTheBox">”Nullam dapibus blandit orci, viverra <br> gravida dui lobortis eget. Maecenas <br> fringilla urna eu nisl scelerisque.”</p>
-	  					<h1 class="title-testimonialis wow jackInTheBox">Chanel Iman</h1>
-	  					<h2 class="title2-testimonialis wow jackInTheBox">CEO of Pinterest</h2>
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<img class="icon5 wow jackInTheBox" src="img/Base1.png" alt="pc">
-	  					<p class="testimonialis-text wow jackInTheBox">”Vivamus luctus urna sed urna ultricies <br> ac tempor dui sagittis. In condimentum<br> facilisis porta.”</p>
-	  					<h1 class="title-testimonialis wow jackInTheBox">ADRIANA LIMA</h1>
-	  					<h2 class="title2-testimonialis wow jackInTheBox">Founder of Instagram</h2>
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<img class="icon5 wow jackInTheBox" src="img/Base1.png" alt="pc">
-	  					<p class="testimonialis-text wow jackInTheBox">”Vivamus luctus urna sed urna ultricies<br> ac tempor dui sagittis. In condimentum<br> facilisis porta.”</p>
-	  					<h1 class="title-testimonialis wow jackInTheBox">ANNE HATHAWAY</h1> 
-	  					<h2 class="title2-testimonialis wow jackInTheBox">Lead Designer at Behance</h2>
-	  				</div>
-	  				<div class="col-lg-6">
-	  					<img class="icon5 wow jackInTheBox" src="img/Base1.png" alt="pc">
-	  					<p class="testimonialis-text wow jackInTheBox">”Phasellus non purus vel arcu tempor<br> commodo. Fusce semper, purus vel luctus<br> molestie, risus sem cursus neque.”</p>
-	  					<h1 class="title-testimonialis wow jackInTheBox">EMMA STONE</h1>
-	  					<h2 class="title2-testimonialis wow jackInTheBox">Co-Founder of Shazam</h2>
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</section>
-
-	  	<section id="get-in-touch">
-	  		<div class="container">
-	  			<div class="row text-center">
-	  				<div class="title-test">
-	  				<h1 class="text-get">
-	  						get in touch
-	  					</h1>
-	  				</div>
-	  				<p class="get-descr">1600 Pennsylvania Ave NW, Washington, DC 20500, United States of America. Tel: (202) 456-1111</p>
-	  				<form action="#" id="messege">
-	 						<div class="col-lg-6">
-	 						<input type="text" placeholder="your Name *" />
-	 					</div>
-	 					<div class="col-lg-6">
-	 						<input type="text" placeholder="your E-mail *"/>
-	 					</div>
-	 					<div class="bottom">
-	 						<textarea cols="0" rows="0" placeholder="Your message *" ></textarea>
-	 					</div>
-	 				</form>
-	 				<div class="btn-get">
-	  					<a  href="#">SEND MESSAGE</a>
-	  				</div>
-	  			</div>
-	  			</div>
-	  		</div>
-	  	</section>
-
-	  	<footer id="footer">
-	  		<div class="container">
-	  			<div class="row">
-	  				<div class="col-lg-2">
-	  					<a target="_blank" href="https://github.com">GitHub</a>
-	  				</div>
-	  				<div class="col-lg-2">
-	  					<a target="_blank" href="https://dribbble.com">Dribbble</a>
-	  				</div>
-	  				<div class="col-lg-2">
-	  					<a target="_blank" href="https://plus.google.com">Google+</a>
-	  				</div>
-	  				<div class="col-lg-2">
-	  					<a target="_blank" href="https://twitter.com">Twitter</a>
-	  				</div>
-	  				<div class="col-lg-2">
-	  					<a target="_blank" href="https://www.facebook.com">Facebook</a>
-	  				</div>
-	  				<div class="col-lg-2">
-	  					<a target="_blank" href="https://www.linkedin.com">LinkedIn</a>
-	  				</div>
-	  			</div>
-	  		</div>
-	  	</footer>
-   
-
-
-     <script src="js/jquery-3.2.1.min.js" ></script>
-     <script src="js/scroll.js" ></script>
-     <script type="text/javascript" src="js/wow.min.js" ></script>
-     <script>
-     	new WOW().init();
-     </script>
-  
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js"></script> -->
-  </body>
+</body>
 </html>
