@@ -1,0 +1,62 @@
+// about
+.about {
+	color: $black;
+	.wrapper {
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+		    -webkit-align-items: center;
+		            align-items: center;
+		    
+		    padding-top: 107px;
+		    padding-bottom: 116px;
+		  		.about__img {
+		    	width: 303px;
+		    	height: 303px;
+		    	margin-right: 45px;
+		    	border-radius: 50%;
+		    	overflow: hidden;
+		    	.my__img {
+			    	display: block;
+			    	transition: 0.6s linear;
+				   &:hover {
+				    	transform: scale(1.2);
+				    	}
+			    	}
+		   	}
+		   .about__info {
+		    	border-left: 1px solid $black;
+		    	height: 368px;
+		    	padding: 5px 0px 5px 25px;
+		    	.about__title {
+		    		font-size: 5.192rem;
+		    		padding-left: 20px;
+		    		font-family: 'Brushwell';
+		    		padding-bottom: 15px;
+		    	}
+		    	.about__decription {
+		    		font-family: 'LouisGeorgeCafe';
+		    		font-size: 1.25rem;
+		    		line-height: 30px;
+		    		width: 530px;
+		    		opacity: 80%;
+		    	}
+		    	.about__btn {
+		    		padding: 10px 15px;
+		    		letter-spacing: 1.82px;
+		    		font-family: 'LouisGeorgeCafe';
+		    		font-size: 1.06rem;
+		    		background-color: transparent;
+		    		border: 1px solid $black;
+		    		margin-top: 30px;
+		    		transition: 0.4s linear;
+		    		
+		    		&:hover {
+		    			background-color: $black;
+		    			color: $white;
+		    			opacity: 80%;
+		    		}
+		    	}
+		}
+	}
+}

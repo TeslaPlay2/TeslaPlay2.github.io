@@ -1,0 +1,93 @@
+// contact
+.contact {
+	background-image: url('../images/contact/BG.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 30px;
+	padding-bottom: 50px;
+	.contact__header {
+		text-align: center;
+		color: $black;
+		padding-bottom: 20px;
+		border-bottom: 2px solid $black;
+		.contact__title {
+			font-family: 'Brushwell';
+			font-size: 5.13rem;
+			line-height: 70px;
+			margin-bottom: 20px;
+		}
+		.contact__subtitle {
+			font-family: 'LouisGeorgeCafe';
+			font-size: 3rem;
+			line-height: 40px;
+			text-transform: uppercase;
+		}
+	}
+	//contact__body
+	.contact__body {
+		display: flex;
+		-webkit-justify-content: center;
+		        justify-content: center;
+	   margin-top: 10px;
+	    .contact__item {
+	    	display: flex;
+    	   flex-direction: column;
+    		overflow: hidden;
+    	   margin-top: 24px;
+    	   width: 346px;
+    	   .contact__description {
+    	    	font-family: 'LouisGeorgeCafe';
+    	    	font-size: 1.25rem;
+    	    	line-height: 30px;
+    	    	margin-top: 10px;
+    	   }
+    	   .contact__name {
+    	    	margin-top: 10px;
+    	   }
+    	   .contact__title {
+    	    	font-family: 'LouisGeorgeCafe';
+    	    	font-size: 1.25rem;
+    	    	line-height: 30px;
+    	    	text-transform: uppercase;	
+    	    	margin: 0px 0px 10px 0px;   
+    	   }
+    	   .contact__input {
+    	    	width: 346px;
+    	    	height: 49px;
+    	    	display: block;
+    	    	background-color: transparent;
+    	    	border: 2px solid $black;
+    	    	padding: 0px 5px 0px 10px;
+    	    	margin-bottom: 10px;
+    	    	transition: 0.3s linear;
+    	    	
+    	    	&:focus {
+    	    		border: 2px solid $white;
+    	    	}
+    	   }
+    	   .contact__subj {
+    	    	width: 346px;
+    	    	height: 151px;
+    	    	display: block;
+    	    	background-color: transparent;
+    	    	border: 2px solid $black;
+    	    	padding: 5px 5px 20px 10px;
+    	    	
+    	    	&:focus {
+    	    		border: 2px solid $white;
+    	    	}
+    	   }
+    	   .contact__img {
+    	    	display: block;	 
+    	    	transition: 0.2s linear;
+
+    	    	&:hover {
+    	    		transform: scale(1.1);
+    	    	}
+    	   }
+	   }
+	    .contact__item:first-child {
+	    	margin-right: 20px;
+	    }
+	}
+}

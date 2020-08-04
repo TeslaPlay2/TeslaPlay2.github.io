@@ -1,0 +1,829 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+@font-face {
+  font-family: "Brushwell";
+  src: url("fonts/Brushwell/Brushwell.eot");
+  src: url("fonts/Brushwell/Brushwell.woff") format("woff"), url("fonts/Brushwell/Brushwell.ttf") format("truetype"), url("fonts/Brushwell/Brushwell.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "LouisGeorgeCafe";
+  src: url("fonts/LouisGeorgeCafe/LouisGeorgeCafe.eot");
+  src: url("fonts/LouisGeorgeCafe/LouisGeorgeCafe.woff") format("woff"), url("fonts/LouisGeorgeCafe.ttf") format("truetype"), url("fonts/LouisGeorgeCafe.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "RedVelvet";
+  src: url("fonts/RedVelvet/RedVelvet-Regular.eot");
+  src: url("fonts/RedVelvet/RedVelvet-Regular.woff") format("woff"), url("fonts/RedVelvet-Regular.ttf") format("truetype"), url("fonts/RedVelvet-Regular.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+html {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  font-size: 1rem;
+  color: #000000;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.header {
+  padding: 2rem 0;
+  position: relative;
+  background: url("../images/header/bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 200px;
+}
+.header__inner .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__inner .nav__link {
+  color: #ffffff;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.27rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+.header__inner .nav__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+.header__inner .nav__link:hover:after {
+  width: 100%;
+}
+.header__inner .nav__search {
+  background-color: transparent;
+  background-image: url("../images/header/search.png");
+  background-repeat: no-repeat;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1rem;
+  width: 10%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.header .header__slider {
+  margin-top: 150px;
+}
+.header .header__slider .header__slides .slider__img {
+  width: 119px;
+  height: 119px;
+  margin: 0 auto;
+  background-image: url("/images/header/Logo.png");
+}
+.header .header__slider .header__slides .slider__name {
+  text-align: center;
+  color: #ffffff;
+}
+.header .header__slider .header__slides .slider__name h2 {
+  font-family: "Brushwell";
+  font-size: 5rem;
+  padding-bottom: 10px;
+}
+.header .header__slider .header__slides .slider__name span {
+  width: 351px;
+  height: 1px;
+  display: block;
+  margin: 0 auto;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+.header .header__slider .header__slides .slider__title {
+  text-align: center;
+  color: #ffffff;
+}
+.header .header__slider .header__slides .slider__title h1 {
+  font-size: 4.4rem;
+  font-family: "RedVelvet";
+  margin-bottom: 31px;
+  line-height: 80px;
+}
+.header .header__slider .header__slides .slider__title p {
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin: 0 auto;
+  font-family: "LouisGeorgeCafe";
+}
+.header .header__social {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  right: 3%;
+  top: 40%;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.header .header__social .social__link {
+  margin: 0 auto;
+  margin-bottom: 20px;
+  padding: 5px;
+  position: relative;
+}
+.header .header__social .social__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+.header .header__social .social__link:hover:after {
+  width: 100%;
+}
+.header .header__social .social__link .social__img {
+  width: 27px;
+  height: 27px;
+  display: block;
+}
+.header .header__social .social__link:first-child {
+  margin-top: 5px;
+}
+.header .header__social .social__link:last-child {
+  margin-bottom: 2px;
+}
+
+.swal-modal {
+  width: 300px;
+  position: absolute;
+  right: 50px;
+  bottom: 500px;
+}
+.swal-modal .swal-text {
+  font-family: "LouisGeorgeCafe";
+  font-size: 20px;
+}
+
+.about {
+  color: #000000;
+}
+.about .wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 107px;
+  padding-bottom: 116px;
+}
+.about .wrapper .about__img {
+  width: 303px;
+  height: 303px;
+  margin-right: 45px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.about .wrapper .about__img .my__img {
+  display: block;
+  transition: 0.6s linear;
+}
+.about .wrapper .about__img .my__img:hover {
+  transform: scale(1.2);
+}
+.about .wrapper .about__info {
+  border-left: 1px solid #000000;
+  height: 368px;
+  padding: 5px 0px 5px 25px;
+}
+.about .wrapper .about__info .about__title {
+  font-size: 5.192rem;
+  padding-left: 20px;
+  font-family: "Brushwell";
+  padding-bottom: 15px;
+}
+.about .wrapper .about__info .about__decription {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+  width: 530px;
+  opacity: 80%;
+}
+.about .wrapper .about__info .about__btn {
+  padding: 10px 15px;
+  letter-spacing: 1.82px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  margin-top: 30px;
+  transition: 0.4s linear;
+}
+.about .wrapper .about__info .about__btn:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+.portfolio {
+  background-image: url("../images/portfolio/Group.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.portfolio .wrapper .portfolio__header {
+  text-align: center;
+}
+.portfolio .wrapper .portfolio__header .portfolio__title {
+  font-family: "Brushwell";
+  font-size: 5rem;
+  color: #000000;
+  margin-bottom: 20px;
+  line-height: 80px;
+  letter-spacing: 1.5px;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 {
+  margin-bottom: 40px;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle {
+  color: #ffffff;
+  font-family: "RedVelvet";
+  font-size: 4.46rem;
+  position: relative;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: 1;
+  transition: width 0.3s linear;
+}
+.portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle:hover:after {
+  width: 100%;
+}
+.portfolio .wrapper .portfolio__header .portfolio__description {
+  font-size: 1.91rem;
+  color: #000000;
+  opacity: 60%;
+  margin-bottom: 25px;
+  font-family: "RedVelvet";
+}
+.portfolio .wrapper .portfolio__header .portfolio__btn {
+  padding: 10px 35px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  margin-top: 30px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.4s linear;
+  text-transform: uppercase;
+}
+.portfolio .wrapper .portfolio__header .portfolio__btn:hover {
+  background-color: #ffffff;
+  opacity: 80%;
+}
+
+.gallery {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.gallery .gallery__slides {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .gallery__slides .gallery__block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  margin: 0px 20px 0px 0px;
+}
+.gallery .gallery__slides .gallery__block .gallery__border {
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+.gallery .gallery__slides .gallery__block .gallery__middle {
+  margin-bottom: 23px;
+  overflow: hidden;
+}
+.gallery .gallery__slides .gallery__block img {
+  transition: 0.6s linear;
+  display: block;
+}
+.gallery .gallery__slides .gallery__block img:hover {
+  transform: scale(1.2);
+}
+.gallery .slick-initialized .slick-slide {
+  display: flex;
+}
+.gallery .slick-dots {
+  position: absolute;
+  bottom: -40px;
+}
+.gallery .slick-dots li button {
+  opacity: 80%;
+}
+.gallery .slick-dots li button:before {
+  color: #707070;
+}
+
+.video {
+  padding-bottom: 50px;
+}
+.video .video__header {
+  background-image: url("../images/video/video-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding-bottom: 50px;
+}
+.video .video__header .video__title {
+  padding-top: 50px;
+  font-family: "RedVelvet";
+  display: block;
+  font-size: 4.44rem;
+  color: #ffffff;
+  padding-bottom: 10px;
+  width: 250px;
+  margin: 0 auto;
+  text-transform: uppercase;
+  position: relative;
+}
+.video .video__header .video__title:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: 1;
+  transition: width 0.3s linear;
+}
+.video .video__header .video__title:hover:after {
+  width: 100%;
+}
+.video .video__header .video__description {
+  margin-top: 30px;
+  font-family: "RedVelvet";
+  font-size: 1.66rem;
+  opacity: 64%;
+}
+.video .video__body .video__play .video__border {
+  overflow: hidden;
+  width: 936px;
+  height: 521px;
+  margin: 0 auto;
+}
+.video .video__body .video__play .video__border .video__link {
+  display: block;
+  background-image: url("../images/video/video-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 936px;
+  height: 521px;
+  margin: 0 auto;
+  opacity: 1;
+  margin-top: 59px;
+  position: relative;
+  transition: 0.3s linear;
+}
+.video .video__body .video__play .video__border .video__link .btn__play {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background-color: transparent;
+  bottom: 45%;
+  right: 47%;
+  transition: 0.3s linear;
+}
+.video .video__body .video__play .video__border .video__link .btn__play::after {
+  content: "";
+  position: absolute;
+  border: 25px solid transparent;
+  border-left: 40px solid #ffffff;
+  transition: 0.3s linear;
+}
+.video .video__body .video__play .video__border .video__link:hover {
+  opacity: 0.8;
+  transform: scale(1.1);
+}
+.video .video__body .video__play .video__border .video__link:hover .btn__play::after {
+  border-left: 40px solid #eb2f06;
+}
+.video .video__body .video__play .line {
+  width: 23px;
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin-top: 22px;
+  margin-bottom: 13px;
+}
+.video .video__body .video__play .video__description {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  color: #000000;
+  line-height: 30px;
+  text-align: center;
+  opacity: 80%;
+  margin-bottom: 46px;
+}
+.video .video__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.video .video__bottom .video__img {
+  margin-bottom: 24px;
+}
+.video .video__bottom .line {
+  width: 23px;
+  display: block;
+  height: 2px;
+  background-color: #000000;
+  margin: 0 auto;
+  margin-bottom: 13px;
+}
+.video .video__bottom .video__name {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  text-align: center;
+  line-height: 30px;
+}
+.video .video__btn .video__more {
+  padding: 10px 35px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.4s linear;
+  text-transform: uppercase;
+  color: #000000;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.video .video__btn .video__more:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+.testimonials {
+  padding-bottom: 30px;
+}
+.testimonials .wrapper {
+  border-top: 2px solid #000000;
+}
+.testimonials .wrapper .testimonials__header {
+  margin-top: 40px;
+  text-align: center;
+}
+.testimonials .wrapper .testimonials__header .testimonials__tittle {
+  font-family: "Brushwell";
+  font-size: 5rem;
+}
+.testimonials .wrapper .testimonials__header .testimonials__subtitle {
+  font-family: "LouisGeorgeCafe";
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+.testimonials .wrapper .testimonials__body {
+  margin-top: 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.testimonials .wrapper .testimonials__body .testimonials__item {
+  text-align: center;
+  width: 328px;
+  height: 413px;
+  border: 1px solid #000000;
+  position: relative;
+}
+.testimonials .wrapper .testimonials__body .testimonials__item .personal__photo {
+  width: 210px;
+  display: block;
+  overflow: hidden;
+  height: 210px;
+  object-fit: cover;
+  position: absolute;
+  top: -35%;
+  right: 60px;
+  transition: 0.2s linear;
+}
+.testimonials .wrapper .testimonials__body .testimonials__item .personal__photo:hover {
+  border-radius: 50%;
+  transform: scale(1.2);
+}
+.testimonials .wrapper .testimonials__body .testimonials__item .personal__name {
+  font-family: "RedVelvet";
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin-top: 80px;
+}
+.testimonials .wrapper .testimonials__body .testimonials__item .personal__description {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin-left: 33.2px;
+  margin-right: 33.2px;
+  margin-top: 28.8px;
+}
+.testimonials .wrapper .testimonials__btn {
+  margin-top: 50px;
+}
+.testimonials .wrapper .testimonials__btn .testimonials__more {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 35px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.06rem;
+  background-color: transparent;
+  border: 1px solid #000000;
+  letter-spacing: 1px;
+  font-weight: 500;
+  transition: 0.4s linear;
+  text-transform: uppercase;
+  color: #000000;
+}
+.testimonials .wrapper .testimonials__btn .testimonials__more:hover {
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 80%;
+}
+
+.contact {
+  background-image: url("../images/contact/BG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+.contact .contact__header {
+  text-align: center;
+  color: #000000;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #000000;
+}
+.contact .contact__header .contact__title {
+  font-family: "Brushwell";
+  font-size: 5.13rem;
+  line-height: 70px;
+  margin-bottom: 20px;
+}
+.contact .contact__header .contact__subtitle {
+  font-family: "LouisGeorgeCafe";
+  font-size: 3rem;
+  line-height: 40px;
+  text-transform: uppercase;
+}
+.contact .contact__body {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.contact .contact__body .contact__item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  margin-top: 24px;
+  width: 346px;
+}
+.contact .contact__body .contact__item .contact__description {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+  margin-top: 10px;
+}
+.contact .contact__body .contact__item .contact__name {
+  margin-top: 10px;
+}
+.contact .contact__body .contact__item .contact__title {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin: 0px 0px 10px 0px;
+}
+.contact .contact__body .contact__item .contact__input {
+  width: 346px;
+  height: 49px;
+  display: block;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 0px 5px 0px 10px;
+  margin-bottom: 10px;
+  transition: 0.3s linear;
+}
+.contact .contact__body .contact__item .contact__input:focus {
+  border: 2px solid #ffffff;
+}
+.contact .contact__body .contact__item .contact__subj {
+  width: 346px;
+  height: 151px;
+  display: block;
+  background-color: transparent;
+  border: 2px solid #000000;
+  padding: 5px 5px 20px 10px;
+}
+.contact .contact__body .contact__item .contact__subj:focus {
+  border: 2px solid #ffffff;
+}
+.contact .contact__body .contact__item .contact__img {
+  display: block;
+  transition: 0.2s linear;
+}
+.contact .contact__body .contact__item .contact__img:hover {
+  transform: scale(1.1);
+}
+.contact .contact__body .contact__item:first-child {
+  margin-right: 20px;
+}
+
+.footer {
+  background-image: url("../images/footer/footer_bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+.footer .footer__inner {
+  padding-top: 80px;
+}
+.footer .footer__inner .nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 756px;
+  margin: 0 auto;
+}
+.footer .footer__inner .nav__link {
+  color: #ffffff;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.27rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  position: relative;
+}
+.footer .footer__inner .nav__link:after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  position: absolute;
+  bottom: -10px;
+  right: 0;
+  z-index: 1;
+  transition: width 0.2s linear;
+}
+.footer .footer__inner .nav__link:hover:after {
+  width: 100%;
+}
+.footer .footer__inner .nav__search {
+  background-color: transparent;
+  background-image: url("../images/header/search.png");
+  background-repeat: no-repeat;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1rem;
+  width: 10%;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+.footer .footer__social .footer__header {
+  display: flex;
+  align-items: center;
+  width: 290px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.footer .footer__social .footer__header .footer__link {
+  display: block;
+}
+.footer .footer__social .footer__header .footer__link .footer__soc {
+  height: 27px;
+  width: 27px;
+  display: block;
+  margin-right: 20px;
+  opacity: 50%;
+  transition: 0.4s linear;
+}
+.footer .footer__social .footer__header .footer__link .footer__soc:hover {
+  opacity: 1;
+}
+.footer .footer__social .footer__text {
+  width: 552px;
+  margin: 0 auto;
+  margin-top: 44px;
+}
+.footer .footer__social .footer__text p {
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+  text-align: center;
+}
+.footer .footer__social .footer__title {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 50px;
+  font-family: "LouisGeorgeCafe";
+  font-size: 1.25rem;
+  line-height: 30px;
+}

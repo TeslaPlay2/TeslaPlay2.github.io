@@ -1,0 +1,166 @@
+// header 
+.header {
+	padding: 2rem 0;
+    position: relative;
+	background: url('../images/header/bg.png');
+	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	     -o-background-size: cover;
+	        background-size: cover;
+    padding-bottom: 200px;
+	&__inner {
+        .nav {
+        	display: flex;
+        	-webkit-justify-content: space-between;
+        	        justify-content: space-between;
+        	    -webkit-align-items: center;
+        	            align-items: center;
+        	&__link {
+        		 color: $white;
+        		 font-family: 'LouisGeorgeCafe';
+        		 font-size: 1.27rem;
+        		 text-transform: uppercase;
+        		 font-weight: 700;
+        		 
+        		 position: relative;
+        		 
+        		 &:after {
+        		 	content: "";
+        		 	width: 0;
+        		 	height: 2px;
+        		 	background-color: $white;
+        		 	
+        		 	position: absolute;
+        		 	bottom: -10px;
+        		 	right: 0;
+        		 	z-index: 1;
+        		 	
+        		 	transition: width .2s linear;
+        		 }
+
+        		 &:hover {
+        		 	&:after {
+        		 		width: 100%;
+        		 	}
+        		 }
+        	 }
+             &__search {
+                background-color: transparent;
+                background-image: url("../images/header/search.png");
+                background-repeat: no-repeat;
+                font-family: 'LouisGeorgeCafe';
+                font-size: 1rem;
+                width: 10%;
+                width: 20px;
+                height: 20px;
+                cursor: pointer;
+             }
+         }
+
+	}
+    // slider styles
+    .header__slider {
+        margin-top: 150px;
+        .header__slides {
+            .slider__img {
+                width: 119px;
+                height: 119px;
+                margin: 0 auto;
+                background-image: url("/images/header/Logo.png");
+            }
+            .slider__name {
+                text-align: center;
+                color: $white;
+                h2 {
+                    font-family: 'Brushwell';
+                    font-size: 5rem;
+                    padding-bottom: 10px;
+                }
+                span {
+                    width: 351px;
+                    height: 1px;
+                    display: block;
+                    margin: 0 auto;
+                    background-color: $white;
+                    margin-bottom: 20px;
+                }
+            }
+            .slider__title {
+                text-align: center;
+                color: $white;
+                h1 {
+                    font-size: 4.4rem;
+                    font-family: 'RedVelvet';
+                    margin-bottom: 31px;
+                    line-height: 80px;
+                }
+                p {
+                    font-size: 1.25rem;
+                    line-height: 30px;
+                    margin: 0 auto;
+                    font-family: 'LouisGeorgeCafe';
+                }
+            }
+        }
+    }
+    // header__social
+    .header__social {
+        position: fixed;
+        display: flex;
+        -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        right: 3%;
+        top: 40%;
+        background-color: rgba(0,0,0,0.3);
+        
+        .social__link {
+            margin: 0 auto;
+            margin-bottom: 20px;
+            padding: 5px;
+            
+            position: relative;
+            
+            &:after {
+                content: "";
+                width: 0;
+                height: 2px;
+                background-color: $white;
+                
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                z-index: 1;
+                
+                transition: width .2s linear;
+            }
+             &:hover {
+                &:after {
+                    width: 100%;
+                }
+             }
+             .social__img {
+                 width: 27px;
+                 height: 27px;
+                 display: block;
+             }
+        }
+        .social__link:first-child {
+            margin-top: 5px;
+        }
+        .social__link:last-child {
+            margin-bottom: 2px;
+        }
+    }
+}
+// sweet alert
+.swal-modal {
+    width: 300px;
+    position: absolute;
+    right: 50px;
+    bottom: 500px;
+    .swal-text {
+        font-family: 'LouisGeorgeCafe';
+        font-size: 20px;
+    }
+}

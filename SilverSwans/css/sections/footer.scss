@@ -1,0 +1,104 @@
+// footer
+.footer {
+	background-image: url('../images/footer/footer_bg.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: $white;
+	padding-bottom: 10px;
+	.footer__inner {
+		padding-top: 80px;
+	     .nav {
+	     		display: flex;
+	    		-webkit-justify-content: space-between;
+	     	        justify-content: space-between;
+	     	    -webkit-align-items: center;
+	     	            align-items: center;
+	     	    width: 756px;
+	     	    margin: 0 auto;
+	     	&__link {
+	     		 color: $white;
+	     		 font-family: 'LouisGeorgeCafe';
+	     		 font-size: 1.27rem;
+	     		 text-transform: uppercase;
+	     		 font-weight: 700;
+	     		 
+	     		 position: relative;
+	     		 
+	     		 &:after {
+	     		 	content: "";
+	     		 	width: 0;
+	     		 	height: 2px;
+	     		 	background-color: $white;
+	     		 	
+	     		 	position: absolute;
+	     		 	bottom: -10px;
+	     		 	right: 0;
+	     		 	z-index: 1;
+	     		 	
+	     		 	transition: width .2s linear;
+	     		 }
+
+	     		 &:hover {
+	     		 	&:after {
+	     		 		width: 100%;
+	     		 	}
+	     		 }
+	     	 }
+	          &__search {
+	             background-color: transparent;
+	             background-image: url("../images/header/search.png");
+	             background-repeat: no-repeat;
+	             font-family: 'LouisGeorgeCafe';
+	             font-size: 1rem;
+	             width: 10%;
+	             width: 20px;
+	             height: 20px;
+	             cursor: pointer;
+	          }
+	      }
+	}
+	// social
+	.footer__social {
+		.footer__header {
+			display: flex;
+			align-items: center;
+			width: 290px;
+			margin: 0 auto;
+			margin-top: 40px;
+			.footer__link {
+				display: block;
+				.footer__soc {
+					height: 27px;
+					width: 27px;
+					display: block;
+					margin-right: 20px;
+					opacity: 50%;
+					transition: 0.4s linear;
+					
+					&:hover {
+						opacity: 1;
+					}
+				}
+			}
+		}
+		.footer__text {
+			width: 552px;
+			margin: 0 auto;
+			margin-top: 44px;
+			p {
+				font-family: 'LouisGeorgeCafe';
+				font-size: 1.25rem;
+				line-height: 30px;
+				text-align: center;
+			}
+		}
+		.footer__title {
+			text-align: center;
+			text-transform: uppercase;
+			margin-top: 50px;
+			font-family: 'LouisGeorgeCafe';
+			font-size: 1.25rem;
+			line-height: 30px;
+		}
+	}
+}

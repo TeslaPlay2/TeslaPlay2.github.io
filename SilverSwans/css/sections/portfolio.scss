@@ -1,0 +1,74 @@
+//portfolio
+.portfolio {
+	background-image: url('../images/portfolio/Group.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-bottom: 30px;
+	padding-top: 30px;
+	.wrapper {
+		.portfolio__header {
+			text-align: center;
+			.portfolio__title {
+				font-family: 'Brushwell';
+				font-size: 5rem;
+				color: $black;
+				margin-bottom: 20px;
+				line-height: 80px;
+				letter-spacing: 1.5px;
+			}
+			.portfolio__2020 {
+				margin-bottom: 40px;
+				.portfolio__subtitle {
+					color: $white;
+					font-family: 'RedVelvet';
+					font-size: 4.46rem;
+        		 	position: relative;
+        		 
+	        		 &:after {
+	        		 	content: "";
+	        		 	width: 0;
+	        		 	height: 2px;
+	        		 	background-color: $white;
+	        		 	
+	        		 	position: absolute;
+	        		 	bottom: -10px;
+	        		 	right: 0;
+	        		 	z-index: 1;
+	        		 	
+	        		 	transition: width .3s linear;
+	        		 }
+
+	        		 &:hover {
+	        		 	&:after {
+	        		 		width: 100%;
+	        		 	}
+	        		 }
+				}
+			}
+			.portfolio__description {
+				font-size: 1.91rem;
+				color: $black;
+				opacity: 60%;
+				margin-bottom: 25px;
+				font-family: 'RedVelvet';
+			}
+			.portfolio__btn {
+					padding: 10px 35px;
+		    		font-family: 'LouisGeorgeCafe';
+		    		font-size: 1.06rem;
+		    		background-color: transparent;
+		    		border: 1px solid $black;
+		    		margin-top: 30px;
+		    		letter-spacing: 1px;
+		    		font-weight: 500;
+		    		transition: 0.4s linear;
+		    		text-transform: uppercase;
+		    		
+		    		&:hover {
+						background-color: $white;
+						opacity: 80%;
+		    		}
+			}
+		}
+	}
+}
