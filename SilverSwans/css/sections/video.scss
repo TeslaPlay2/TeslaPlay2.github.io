@@ -125,8 +125,15 @@
 		        justify-content: space-between;
 		    -webkit-align-items: center;
 		            align-items: center;
-		    .video__img {
-		    	margin-bottom: 24px;
+		    .scale {
+		    	overflow: hidden;
+		    	.video__img {
+			    	transition: 0.3s linear;
+			    	display: block;		    	
+			    	&:hover {
+			    		transform: scale(1.2);
+			    	}
+		    	}
 		    }
 		    .line {
 				width: 23px;
@@ -135,6 +142,7 @@
 				background-color: $black;
 				margin: 0 auto;
 				margin-bottom: 13px;
+				margin-top: 24px;
 			}
 			.video__name {
 				font-family: 'LouisGeorgeCafe';

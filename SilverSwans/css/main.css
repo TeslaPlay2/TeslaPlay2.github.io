@@ -164,7 +164,7 @@ body {
   width: 119px;
   height: 119px;
   margin: 0 auto;
-  background-image: url("/images/header/Logo.png");
+  background-image: url("../images/header/Logo.png");
 }
 .header .header__slider .header__slides .slider__name {
   text-align: center;
@@ -534,8 +534,15 @@ body {
   justify-content: space-between;
   align-items: center;
 }
-.video .video__bottom .video__img {
-  margin-bottom: 24px;
+.video .video__bottom .scale {
+  overflow: hidden;
+}
+.video .video__bottom .scale .video__img {
+  transition: 0.3s linear;
+  display: block;
+}
+.video .video__bottom .scale .video__img:hover {
+  transform: scale(1.2);
 }
 .video .video__bottom .line {
   width: 23px;
@@ -544,6 +551,7 @@ body {
   background-color: #000000;
   margin: 0 auto;
   margin-bottom: 13px;
+  margin-top: 24px;
 }
 .video .video__bottom .video__name {
   font-family: "LouisGeorgeCafe";
