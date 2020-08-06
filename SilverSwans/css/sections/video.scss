@@ -2,11 +2,12 @@
 .video {
 	padding-bottom: 50px;
 	.video__header {
-		background-image: url('../images/video/video-bg.png');
+		background-image: url('../images/video/video-bg.jpg');
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
-		padding-bottom: 50px;
+		padding-bottom: 100px;
+		padding-top: 50px;
 		.video__title {
 			padding-top: 50px;
 			font-family: 'RedVelvet';
@@ -43,6 +44,7 @@
 			margin-top: 30px;
 			font-family: 'RedVelvet';
 			font-size: 1.66rem;
+			line-height: 35px;
 			opacity: 64%;
 		}
 	}
@@ -54,6 +56,7 @@
 				width: 936px;
 				height: 521px;
 				margin: 0 auto;
+				margin-top: 40px;
 				.video__link {
 					display: block;
 					background-image: url("../images/video/video-img.png");

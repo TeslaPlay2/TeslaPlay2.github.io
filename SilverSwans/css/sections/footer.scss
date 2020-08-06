@@ -1,6 +1,6 @@
 // footer
 .footer {
-	background-image: url('../images/footer/footer_bg.png');
+	background-image: url('../images/footer/footer_bg.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $white;
@@ -62,16 +62,17 @@
 		.footer__header {
 			display: flex;
 			align-items: center;
-			width: 290px;
+			width: 260px;
 			margin: 0 auto;
 			margin-top: 40px;
 			.footer__link {
 				display: block;
+				margin-right: 20px;
 				.footer__soc {
 					height: 27px;
 					width: 27px;
 					display: block;
-					margin-right: 20px;
+					
 					opacity: 50%;
 					transition: 0.4s linear;
 					
@@ -79,6 +80,9 @@
 						opacity: 1;
 					}
 				}
+									&:last-child {
+						margin-right: 0;
+					}
 			}
 		}
 		.footer__text {
