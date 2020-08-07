@@ -21,3 +21,18 @@ $('a[href^="#"').on('click', function() {
     });
     return false;
 });
+
+$(document).ready(function(){
+	let but = document.getElementById("search");
+	but.addEventListener('click', function(){
+		swal({
+		  content: {
+		    element: "input",
+		    attributes: {
+		      placeholder: "Write something to search:",
+		      type: "text",
+		    },
+		  },
+		});
+	});
+});

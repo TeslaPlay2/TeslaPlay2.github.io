@@ -200,6 +200,16 @@ body {
 		font-size: 13px;
 	}
 	.header {
+		.navbar-default {
+        padding: 10px 0;
+        -webkit-transition: padding .3s;
+        -moz-transition: padding .3s;
+        transition: padding .3s;
+    	}
+    .navbar-default.navbar-shrink {
+        padding: 0 0;
+    }
+
 		&__inner {
 			position: fixed;
 			top: 0;
@@ -467,14 +477,21 @@ body {
 				margin-right: 0;
 			}
 			.contact__item {
+				width: 100%;
+				.contact__description {
+					text-align: center;
+				}
 				.contact__input {
-					width: 280px;
+					width: 100%;
 					margin: 0 auto;
 				}
 				.contact__subj {
-					width: 280px;
+					width: 100%;
 					margin: 0 auto;
 				}
+			}
+			.contact__item:last-child {
+				width: 346px;
 			}
 		}
 	}

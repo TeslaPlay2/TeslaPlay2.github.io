@@ -72,6 +72,7 @@
     	    	background-color: transparent;
     	    	border: 2px solid $black;
     	    	padding: 5px 5px 20px 10px;
+                resize: none;
     	    	
     	    	&:focus {
     	    		border: 2px solid $white;

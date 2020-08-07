@@ -28,7 +28,7 @@
 	<!-- header -->
 	<header id="header" class="header">
 		<div class="wrapper">
-			<div class="header__inner">
+			<div class="header__inner navbar-default">
 				<div class="hedaer__body">
 					<a href="#" class="logo"> Silver Swans </a>	
 					<div class="burger">
@@ -384,7 +384,7 @@
 					</div>
 					<div class="contact__message">
 						<h4 class="contact__title">Subject:</h4>
-						<input class="contact__subj" type="text">
+						<textarea class="contact__subj" type="text"> </textarea>
 					</div>
 				</div>
 				<div class="contact__item">
@@ -398,14 +398,14 @@
 		<div class="wrapper">
 			<div class="footer__inner">
 				<nav class="nav">
-					<a href="#" class="nav__link">Home</a>
-					<a href="#" class="nav__link">About</a>
-					<a href="#" class="nav__link">Portfolio</a>
-					<a href="#" class="nav__link">Blog</a>
-					<a href="#" class="nav__link">Video</a>
-					<a href="#" class="nav__link">Testimonials</a>
-					<a href="" class="nav__link">Contact</a>
-					<a id="footer" class="nav__search"   type="text"></a>
+					<a href="#header" class="nav__link">Home</a>
+					<a href="#about" class="nav__link">About</a>
+					<a href="#portfolio" class="nav__link">Portfolio</a>
+					<a href="#gallery" class="nav__link">Blog</a>
+					<a href="#video" class="nav__link">Video</a>
+					<a href="#testimonials" class="nav__link">Testimonials</a>
+					<a href="#contact" class="nav__link">Contact</a>
+					<a id="search" class="nav__search"   type="text"></a>
 				</nav>
 			</div>
 			<div class="footer__social">
@@ -445,6 +445,16 @@
 		swal("Write something to search:", {
 		  content: "input",
 			})
+		});
+	</script>
+	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+			    $('.navbar-default').addClass("navbar-shrink");
+			  }
+			  else{
+			    $('.navbar-default').removeClass("navbar-shrink");
+			  }
 		});
 	</script>
 </body>

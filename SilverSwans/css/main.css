@@ -117,6 +117,7 @@ body {
   background: url("../images/header/bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100vh;
   padding-bottom: 200px;
 }
 .header__inner .logo {
@@ -744,6 +745,7 @@ body {
   background-color: transparent;
   border: 2px solid #000000;
   padding: 5px 5px 20px 10px;
+  resize: none;
 }
 .contact .contact__body .contact__item .contact__subj:focus {
   border: 2px solid #ffffff;
@@ -851,6 +853,16 @@ body {
   font-family: "LouisGeorgeCafe";
   font-size: 1.25rem;
   line-height: 30px;
+}
+
+.swal-modal {
+  position: absolute;
+  bottom: 10%;
+}
+.swal-modal .swal-content__input {
+  font-family: "LouisGeorgeCafe";
+  font-size: 15px;
+  color: #000000;
 }
 
 @media screen and (max-width: 1200px) {
@@ -978,6 +990,13 @@ body {
     font-size: 13px;
   }
 
+  .header .navbar-default {
+    padding: 10px 0;
+    transition: padding 0.3s;
+  }
+  .header .navbar-default.navbar-shrink {
+    padding: 0 0;
+  }
   .header__inner {
     position: fixed;
     top: 0;
@@ -1211,13 +1230,22 @@ body {
   .contact .contact__body .contact__item:first-child {
     margin-right: 0;
   }
+  .contact .contact__body .contact__item {
+    width: 100%;
+  }
+  .contact .contact__body .contact__item .contact__description {
+    text-align: center;
+  }
   .contact .contact__body .contact__item .contact__input {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
   }
   .contact .contact__body .contact__item .contact__subj {
-    width: 280px;
+    width: 100%;
     margin: 0 auto;
+  }
+  .contact .contact__body .contact__item:last-child {
+    width: 346px;
   }
 
   .footer .footer__inner {
