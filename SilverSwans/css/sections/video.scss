@@ -6,8 +6,6 @@
 		background-repeat: no-repeat;
 		background-size: cover;
 		text-align: center;
-		padding-bottom: 100px;
-		padding-top: 50px;
 		.video__title {
 			padding-top: 50px;
 			font-family: 'RedVelvet';
@@ -46,6 +44,7 @@
 			font-size: 1.66rem;
 			line-height: 35px;
 			opacity: 64%;
+			padding-bottom: 100px;
 		}
 	}
 	// video__body
@@ -53,8 +52,7 @@
 		.video__play {
 			.video__border {
 				overflow: hidden;
-				width: 936px;
-				height: 521px;
+
 				margin: 0 auto;
 				margin-top: 40px;
 				.video__link {
@@ -110,6 +108,8 @@
 			.video__description {
 				font-family: 'LouisGeorgeCafe';
 				font-size: 1.25rem;
+				width: 912px;
+				margin: 0 auto;
 				color: $black;
 				line-height: 30px;
 				text-align: center;

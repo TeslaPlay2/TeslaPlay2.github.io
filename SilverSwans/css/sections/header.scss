@@ -9,6 +9,12 @@
 	        background-size: cover;
     padding-bottom: 200px;
 	&__inner {
+                .logo {
+                    display: none;
+                }
+                .burger {
+                    display: none;
+                }
         .nav {
         	display: flex;
         	-webkit-justify-content: space-between;
@@ -94,9 +100,10 @@
                     margin-bottom: 31px;
                     line-height: 80px;
                 }
-                p {
+                .slider__description {
                     font-size: 1.25rem;
                     line-height: 30px;
+                    width: 912px;
                     margin: 0 auto;
                     font-family: 'LouisGeorgeCafe';
                 }
@@ -111,6 +118,7 @@
             -ms-flex-direction: column;
                 flex-direction: column;
         right: 3%;
+        z-index: 10;
         top: 40%;
         background-color: rgba(0,0,0,0.3);
         

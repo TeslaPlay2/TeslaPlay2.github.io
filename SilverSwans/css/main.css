@@ -119,6 +119,12 @@ body {
   background-size: cover;
   padding-bottom: 200px;
 }
+.header__inner .logo {
+  display: none;
+}
+.header__inner .burger {
+  display: none;
+}
 .header__inner .nav {
   display: flex;
   justify-content: space-between;
@@ -193,9 +199,10 @@ body {
   margin-bottom: 31px;
   line-height: 80px;
 }
-.header .header__slider .header__slides .slider__title p {
+.header .header__slider .header__slides .slider__title .slider__description {
   font-size: 1.25rem;
   line-height: 30px;
+  width: 912px;
   margin: 0 auto;
   font-family: "LouisGeorgeCafe";
 }
@@ -204,6 +211,7 @@ body {
   display: flex;
   flex-direction: column;
   right: 3%;
+  z-index: 10;
   top: 40%;
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -317,8 +325,7 @@ body {
   background-image: url("../images/portfolio/Group.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  padding-bottom: 30px;
-  padding-top: 30px;
+  height: 450px;
 }
 .portfolio .wrapper .portfolio__header {
   text-align: center;
@@ -432,8 +439,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   text-align: center;
-  padding-bottom: 100px;
-  padding-top: 50px;
 }
 .video .video__header .video__title {
   padding-top: 50px;
@@ -467,11 +472,10 @@ body {
   font-size: 1.66rem;
   line-height: 35px;
   opacity: 64%;
+  padding-bottom: 100px;
 }
 .video .video__body .video__play .video__border {
   overflow: hidden;
-  width: 936px;
-  height: 521px;
   margin: 0 auto;
   margin-top: 40px;
 }
@@ -523,6 +527,8 @@ body {
 .video .video__body .video__play .video__description {
   font-family: "LouisGeorgeCafe";
   font-size: 1.25rem;
+  width: 912px;
+  margin: 0 auto;
   color: #000000;
   line-height: 30px;
   text-align: center;
@@ -845,4 +851,356 @@ body {
   font-family: "LouisGeorgeCafe";
   font-size: 1.25rem;
   line-height: 30px;
+}
+
+@media screen and (max-width: 1200px) {
+  .video .video__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video .video__bottom .video__item {
+    margin: 5px;
+  }
+  .video .video__bottom .video__item .scale .video__img {
+    width: 350px;
+    height: 200px;
+  }
+  .video .video__btn .video__more {
+    margin-top: 10px;
+  }
+
+  .testimonials .wrapper .testimonials__body {
+    display: flex;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item {
+    margin-right: 10px;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item .personal__photo {
+    right: 50px;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item:last-child {
+    margin-bottom: 0;
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .header__inner {
+    padding: 0px 5px 0px 5px;
+  }
+  .header .header__slider .header__slides .slider__img {
+    margin-bottom: 20px;
+  }
+  .header .header__slider .header__slides .slider__name h2 {
+    font-size: 4.4rem;
+  }
+  .header .header__slider .header__slides .slider__title h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .header .header__slider .header__slides .slider__title .slider__description {
+    width: 700px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .header .header__slider .header__social {
+    z-index: 20;
+  }
+
+  .about .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about .wrapper .about__img {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .about .wrapper .about__info .about__title {
+    padding-left: 0;
+  }
+
+  .video .video__header {
+    padding-bottom: 50px;
+  }
+  .video .video__header .video__title {
+    padding-top: 20px;
+    font-size: 3.8rem;
+  }
+  .video .video__header .video__description {
+    font-size: 1.2rem;
+  }
+  .video .video__body .video__play .video__border {
+    width: 600px;
+    height: 350px;
+  }
+  .video .video__body .video__play .video__border .video__link {
+    display: block;
+    width: 600px;
+    height: 350px;
+    margin-top: 0;
+  }
+  .video .video__body .video__play .video__description {
+    width: 500px;
+  }
+  .video .video__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video .video__bottom .video__item {
+    margin: 5px;
+  }
+  .video .video__bottom .video__item .scale .video__img {
+    width: 280px;
+    height: 180px;
+  }
+
+  .testimonials .wrapper .testimonials__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item {
+    margin: 0 auto;
+    margin-bottom: 180px;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item .personal__photo {
+    right: 50px;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item:last-child {
+    margin-bottom: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  body.lock {
+    overflow: hidden;
+  }
+
+  html {
+    font-size: 13px;
+  }
+
+  .header__inner {
+    padding: 0px 5px 0px 5px;
+  }
+  .header .header__slider .header__slides .slider__img {
+    margin-bottom: 20px;
+  }
+  .header .header__slider .header__slides .slider__name h2 {
+    font-size: 4.4rem;
+  }
+  .header .header__slider .header__slides .slider__title h1 {
+    font-size: 3rem;
+    line-height: 45px;
+  }
+  .header .header__slider .header__slides .slider__title .slider__description {
+    width: 550px;
+    font-size: 1.2rem;
+    padding: 10px;
+  }
+  .header .header__slider .header__social {
+    z-index: 20;
+  }
+
+  .about .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .about .wrapper .about__img {
+    margin-right: 0;
+    width: 250px;
+    height: 250px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+  .about .wrapper .about__img img {
+    width: 250px;
+    height: 250px;
+  }
+  .about .wrapper .about__info {
+    text-align: center;
+    padding: 0;
+  }
+  .about .wrapper .about__info .about__title {
+    padding-left: 0;
+  }
+  .about .wrapper .about__info .about__decription {
+    width: 300px;
+    margin: 5px;
+  }
+
+  .portfolio .wrapper .portfolio__header .portfolio__title {
+    padding-top: 10px;
+  }
+  .portfolio .wrapper .portfolio__header .portfolio__2020 {
+    margin-bottom: 20px;
+  }
+  .portfolio .wrapper .portfolio__header .portfolio__2020 .portfolio__subtitle {
+    font-size: 3.5rem;
+    line-height: 45px;
+  }
+  .portfolio .wrapper .portfolio__header .portfolio__description {
+    line-height: 30px;
+  }
+  .portfolio .wrapper .portfolio__header .portfolio__btn {
+    margin-top: 0;
+  }
+
+  .gallery .gallery__slides {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .gallery__slides .gallery__block {
+    margin: 0;
+  }
+
+  .video .video__header {
+    padding-bottom: 50px;
+  }
+  .video .video__header .video__title {
+    padding-top: 20px;
+    font-size: 3.8rem;
+  }
+  .video .video__header .video__description {
+    font-size: 1.2rem;
+  }
+  .video .video__body .video__play .video__border {
+    width: 500px;
+    height: 300px;
+    x-index: 3;
+  }
+  .video .video__body .video__play .video__border .video__link {
+    display: block;
+    width: 500px;
+    height: 300px;
+    z-index: 5;
+    margin-top: 0;
+  }
+  .video .video__body .video__play .video__border .video__link .btn__play {
+    height: 30px;
+    width: 30px;
+    right: 40%;
+  }
+  .video .video__body .video__play .video__description {
+    width: 300px;
+  }
+  .video .video__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .video .video__bottom .video__item {
+    margin: 5px;
+  }
+  .video .video__bottom .video__item .scale .video__img {
+    width: 280px;
+    height: 180px;
+  }
+
+  .testimonials .wrapper .testimonials__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item {
+    margin: 0 auto;
+    margin-bottom: 180px;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item .personal__photo {
+    right: 50px;
+  }
+  .testimonials .wrapper .testimonials__body .testimonials__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .contact .contact__body {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contact .contact__body .contact__item:first-child {
+    margin-right: 0;
+  }
+  .contact .contact__body .contact__item .contact__input {
+    width: 280px;
+    margin: 0 auto;
+  }
+  .contact .contact__body .contact__item .contact__subj {
+    width: 280px;
+    margin: 0 auto;
+  }
+
+  .footer .footer__inner {
+    display: none;
+  }
+  .footer .footer__social .footer__header {
+    margin-top: 0;
+    padding-top: 30px;
+  }
+  .footer .footer__social .footer__text {
+    width: 290px;
+  }
+}
+@media (min-width: 750px) and (max-width: 767px) {
+  .gallery .gallery__slides {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .gallery .gallery__slides .gallery__block {
+    margin: 5px;
+  }
+}
+@media screen and (max-width: 550px) {
+  .header .header__slider .header__slides .slider__title .slider__description {
+    width: 400px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+  }
+
+  .video .video__body .video__play .video__border {
+    width: 400px;
+    height: 220px;
+    x-index: 3;
+  }
+  .video .video__body .video__play .video__border .video__link {
+    display: block;
+    width: 400px;
+    height: 220px;
+    z-index: 5;
+    margin-top: 0;
+  }
+  .video .video__body .video__play .video__border .video__link .btn__play {
+    height: 30px;
+    width: 30px;
+    right: 40%;
+  }
+  .video .video__body .video__play .video__description {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 450px) {
+  .header .header__slider .header__slides .slider__title .slider__description {
+    width: 300px;
+    margin: 0 auto;
+    padding: 5px;
+    font-size: 1rem;
+  }
+
+  .video .video__body .video__play .video__border {
+    width: 280px;
+    height: 180px;
+    x-index: 3;
+  }
+  .video .video__body .video__play .video__border .video__link {
+    display: block;
+    width: 280px;
+    height: 180px;
+    z-index: 5;
+    margin-top: 0;
+  }
+  .video .video__body .video__play .video__border .video__link .btn__play {
+    height: 30px;
+    width: 30px;
+    right: 40%;
+  }
+  .video .video__body .video__play .video__description {
+    width: 300px;
+  }
 }

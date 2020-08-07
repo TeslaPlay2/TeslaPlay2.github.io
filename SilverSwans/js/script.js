@@ -4,3 +4,10 @@ $(document).ready(function(){
 		dots: true
 	});
 });
+
+$(document).ready(function(){
+	$('.burger').click(function(event){
+		$(".nav").toggleClass('active');
+		$('body').toggleClass('lock');
+	})
+});
