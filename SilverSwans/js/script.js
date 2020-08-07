@@ -7,7 +7,17 @@ $(document).ready(function(){
 
 $(document).ready(function(){
 	$('.burger').click(function(event){
-		$(".nav").toggleClass('active');
+		$(".nav,.burger").toggleClass('active');
 		$('body').toggleClass('lock');
 	})
+});
+
+$('a[href^="#"').on('click', function() {
+
+    let href = $(this).attr('href');
+
+    $('html, body').animate({
+        scrollTop: $(href).offset().top
+    });
+    return false;
 });

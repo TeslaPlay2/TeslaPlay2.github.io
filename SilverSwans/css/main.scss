@@ -65,14 +65,13 @@ body {
 			.testimonials__body {
 				display: flex;
 				.testimonials__item {
-					margin-right: 10px;
+					margin: 10px;
 					.personal__photo {
 						right: 50px;
 					}
 				}
 				.testimonials__item:last-child {
 					margin-bottom: 0;
-					margin-right: 0;
 				}
 			}
 		}
@@ -195,15 +194,109 @@ body {
 
 @media screen and (max-width: 767px) {
 	body.lock {
- 		overflow: hidden;
- 	}
+		overflow: hidden;
+	}
 	html {
 		font-size: 13px;
 	}
-	// header
 	.header {
 		&__inner {
-			padding: 0px 5px 0px 5px;
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 50;
+			.hedaer__body {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				height: 60px;
+				.logo {
+					display: block;
+					font-family: 'Brushwell';
+					font-size: 3rem;
+					color: $black;
+					line-height: 30px;
+					position: relative;
+					z-index: 6;
+				}
+				.burger {
+					display: block;
+					position: relative;
+					width: 20px;
+					height: 20px;
+					z-index: 6;
+					&:after {
+						content: "";
+						position: absolute;
+						height: 2px;
+						width: 100%;
+						background-color: $black;
+						left: 0;
+						bottom: 0;
+						transition: all 0.2s linear 0s;
+					}
+					&:before {
+						content: "";
+						position: absolute;
+						height: 2px;
+						width: 100%;
+						background-color: $black;
+						top: 0;
+						transition: all 0.2s linear 0s;		
+					}
+					&.active:before {
+						transform: rotate(45deg);
+						top: 9px;
+					}
+					&.active:after {
+						transform: rotate(-45deg);
+						bottom: 9px;
+					}
+					&.active span {
+						transform: scale(0);
+					}
+					span {
+						position: absolute;
+						background-color: $black;
+						left: 0;
+						width: 100%;
+						height: 2px;
+						top: 9px;
+						transition: all 0.2s linear 0s;
+					}
+				}
+			}
+			.nav {
+				position: fixed;
+				top: -100%;
+				left: 0;
+				overflow: auto;
+				width: 100%;
+				padding: 70px 0px 0px 0px;
+				background-color: #2b2929;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				transition: all 0.2s linear 0s;
+				
+				&.active {
+					top: 0;
+				}
+				.nav__link {
+					margin-bottom: 20px;
+				}
+			}
+		}
+		&__inner:before {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: #f0eded;
+			z-index: 4;
 		}
 		.header__slider {
 			.header__slides {
@@ -230,6 +323,7 @@ body {
 			}
 		}
 	}
+
 	// about
 	.about {
 		.wrapper {
