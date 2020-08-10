@@ -37,12 +37,7 @@ body {
 @import "sections/footer.scss";
 
 @media screen and (max-width: 1200px) {
-	.header {
-		.header__inner {
-			// padding-left: 2rem;
-   //      padding-right: 2rem;
-		}
-	}
+
 	// video 
 	.video {
 		.video__bottom {
@@ -227,6 +222,7 @@ body {
 				padding: 0px 10px 0px 10px;
 				justify-content: space-between;
 				align-items: center;
+				width: 100%;
 				height: 60px;
 				.logo {
 					display: block;
