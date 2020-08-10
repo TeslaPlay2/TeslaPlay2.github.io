@@ -120,6 +120,27 @@ body {
   height: 100vh;
   padding-bottom: 200px;
 }
+.header .navbar-bgc {
+  background-color: transparent;
+  transition: background-color 0.9s;
+}
+.header .navbar-color {
+  background-color: #2d3436;
+}
+.header__inner {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 75;
+}
+.header__inner .hedaer__body {
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
 .header__inner .logo {
   display: none;
 }
@@ -1006,6 +1027,7 @@ body {
   }
   .header__inner .hedaer__body {
     display: flex;
+    padding: 0px 10px 0px 10px;
     justify-content: space-between;
     align-items: center;
     height: 60px;
@@ -1022,7 +1044,7 @@ body {
   .header__inner .hedaer__body .burger {
     display: block;
     position: relative;
-    width: 20px;
+    width: 25px;
     height: 20px;
     z-index: 6;
   }

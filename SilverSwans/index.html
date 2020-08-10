@@ -28,7 +28,7 @@
 	<!-- header -->
 	<header id="header" class="header">
 		<div class="wrapper">
-			<div class="header__inner navbar-default">
+			<div class="header__inner navbar-default navbar-bgc ">
 				<div class="hedaer__body">
 					<a href="#" class="logo"> Silver Swans </a>	
 					<div class="burger">
@@ -439,6 +439,7 @@
 	<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 	<!-- fancybox -->
 	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+	<!-- sweet alert on search button -->
 	<script>
 		let but = document.getElementById("link");
 		but.addEventListener('click', function(){
@@ -447,6 +448,7 @@
 			})
 		});
 	</script>
+	<!--  mobile header scroll -->
 	<script>
 		$(window).scroll(function() {
 			if ($(this).scrollTop() > 1){  
@@ -454,6 +456,17 @@
 			  }
 			  else{
 			    $('.navbar-default').removeClass("navbar-shrink");
+			  }
+		});
+	</script>
+	<!-- header on big screen fixed -->
+	<script>
+		$(window).scroll(function() {
+			if ($(this).scrollTop() > 1){  
+			    $('.navbar-bgc').addClass("navbar-color");
+			  }
+			  else{
+			    $('.navbar-bgc').removeClass("navbar-color");
 			  }
 		});
 	</script>

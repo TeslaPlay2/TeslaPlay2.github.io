@@ -37,6 +37,12 @@ body {
 @import "sections/footer.scss";
 
 @media screen and (max-width: 1200px) {
+	.header {
+		.header__inner {
+			// padding-left: 2rem;
+   //      padding-right: 2rem;
+		}
+	}
 	// video 
 	.video {
 		.video__bottom {
@@ -199,7 +205,7 @@ body {
 	html {
 		font-size: 13px;
 	}
-	.header {
+	.header { 
 		.navbar-default {
         padding: 10px 0;
         -webkit-transition: padding .3s;
@@ -218,6 +224,7 @@ body {
 			z-index: 50;
 			.hedaer__body {
 				display: flex;
+				padding: 0px 10px 0px 10px;
 				justify-content: space-between;
 				align-items: center;
 				height: 60px;
@@ -233,7 +240,7 @@ body {
 				.burger {
 					display: block;
 					position: relative;
-					width: 20px;
+					width: 25px;
 					height: 20px;
 					z-index: 6;
 					&:after {

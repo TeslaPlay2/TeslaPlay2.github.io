@@ -9,13 +9,33 @@
 	        background-size: cover;
     height: 100vh;
     padding-bottom: 200px;
+    .navbar-bgc {
+        background-color: transparent;
+        transition: background-color 0.9s;
+    }
+    .navbar-color {
+        background-color: #2d3436;
+    }
+    
 	&__inner {
-                .logo {
-                    display: none;
-                }
-                .burger {
-                    display: none;
-                }
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 75;
+        .hedaer__body {
+            margin: 0 auto;
+            padding-top: 20px;
+            padding-bottom: 20px;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .logo {
+            display: none;
+        }
+        .burger {
+            display: none;
+        }
         .nav {
         	display: flex;
         	-webkit-justify-content: space-between;
